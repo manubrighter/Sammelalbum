@@ -4,7 +4,7 @@ public class PaekchenOeffnen {
 
 	public static void main(String[] args) {
 		System.out.println("Test Jimoh!");
-		System.out.println("Hello World:");
+		System.out.println("Gott");
 
 	}
 
