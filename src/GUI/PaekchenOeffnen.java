@@ -1,11 +1,28 @@
 package GUI;
 
-public class PaekchenOeffnen {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-	public static void main(String[] args) {
+import javax.swing.JFrame;
+
+public class PaekchenOeffnen extends JFrame implements ActionListener{
+
 	
-		System.out.println("Test 1!");
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
 	}
 
 }
