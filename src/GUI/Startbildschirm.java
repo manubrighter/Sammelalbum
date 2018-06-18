@@ -22,7 +22,21 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
 	
-	
+	public Startbildschirm()
+	{
+		//Anzeige Fenster erstellen (provisorische Werte) und sichtbar machen
+		this.setLayout(null);
+		this.setSize(1500, 450);
+		this.setVisible(true);
+		
+		//GUI Elemente beschriften
+		bAlbumAnsehen = new JButton("Album Ansehen");
+		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
+		bNeustarten = new JButton ("Neustarten");
+		bProgrammBeenden = new JButton ("Beenden");
+		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
+		
+	}
 	
 
 	
