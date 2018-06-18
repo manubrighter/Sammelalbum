@@ -1,3 +1,15 @@
+/*ToDo
+ * Alle Buttons Designen und visible machen
+ * Layout integrieren (border?, grid? card?)
+ * Action Listener Befehle
+ */
+
+
+
+
+
+
+
 package GUI;
 
 import java.awt.Font;
