@@ -1,5 +1,6 @@
 package GUI;
 
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -15,6 +16,12 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	private JButton neustarten;
 	private JButton programmBeenden;
 	private JLabel fussballbilderSammelalbum;
+	
+	//Erstellung Schriften
+	private Font Font50 = new Font("Arial", Font.BOLD, 50);
+	private Font Font40 = new Font("Arial", Font.BOLD, 40);
+	private Font Font20 = new Font("Arial", Font.BOLD, 20);
+
 	
 
 	@Override
