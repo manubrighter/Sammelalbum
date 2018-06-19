@@ -38,7 +38,8 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	{
 		//Anzeige Fenster erstellen (provisorische Werte) und sichtbar machen
 		this.setLayout(null);
-		this.setSize(1500, 450);
+		this.setSize(622, 875);
+		this.setLocation(1,1);
 		this.setVisible(true);
 		
 		//GUI Elemente beschriften
