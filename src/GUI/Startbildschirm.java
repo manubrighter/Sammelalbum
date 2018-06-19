@@ -49,6 +49,9 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		bProgrammBeenden = new JButton ("Beenden");
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
 		
+		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
+		this.setSize(1150, 650); //Grösse des Fensters definieren
+		this.setLocation(530, 350); //Ort des Fensters definieren
 	}
 	
 

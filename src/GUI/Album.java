@@ -28,16 +28,21 @@ public class Album extends JFrame implements ActionListener{
 
 	private Font F1 = new Font("Arial", Font.BOLD, 50);
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public Album() {
+		this.setLayout(null); 
+		
+		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
+		this.setSize(1150, 650); //Grösse des Fensters definieren
+		this.setLocation(530, 350); //Ort des Fensters definieren
+		
+		
+		
+		
+		
+		this.setVisible(true); 
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //das Programm beenden wenn man es schliesst
+		
+	}
 	
 	
 	
