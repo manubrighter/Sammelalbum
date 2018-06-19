@@ -27,8 +27,6 @@ public class Album extends JFrame implements ActionListener{
 	
 
 	
-	
-	
 	public Album() {
 		this.setLayout(null); 
 		
