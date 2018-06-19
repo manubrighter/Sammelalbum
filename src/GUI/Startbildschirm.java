@@ -22,7 +22,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Startbildschirm extends JFrame implements ActionListener {
+public class Startbildschirm extends JFrame implements ActionListener{
 	
 	//Erstellung der GUI Elemente
 	private JButton bAlbumAnsehen;
@@ -41,8 +41,8 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	{
 		//Anzeige Fenster erstellen (provisorische Werte) und sichtbar machen
 		this.setLayout(null);
-		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
-		this.setSize(1150, 650); //Grösse des Fensters definieren
+		this.setResizable(false); //FenstergrÃ¶sse ist nicht verÃ¤nderbar
+		this.setSize(1150, 650); //GrÃ¶sse des Fensters definieren
 		this.setLocation(530, 350); //Ort des Fensters definieren
 		this.setVisible(true);
 		
@@ -50,11 +50,12 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		
 		//GUI Elemente beschriften und Designen
 		bAlbumAnsehen = new JButton("Album Ansehen");
+
 		bAlbumAnsehen.setBounds(100,100,100,100);
 		bAlbumAnsehen.setVisible(true);
 		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
-		
+
 		bNeustarten = new JButton ("Neustarten");
 		
 		bProgrammBeenden = new JButton ("Beenden");
@@ -80,7 +81,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		
 		//GUI Elemente beschriftet
 		bAlbumAnsehen = new JButton("Album Ansehen");
-		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
+		bPaeckchenOeffnen = new JButton ("PÃ¤ckchen Ã¶ffnen");
 		bNeustarten = new JButton ("Neustarten");
 		bProgrammBeenden = new JButton ("Beenden");
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
