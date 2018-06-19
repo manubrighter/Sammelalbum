@@ -41,6 +41,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
 		this.setSize(1150, 650); //Grösse des Fensters definieren
 		this.setLocation(530, 350); //Ort des Fensters definieren
+		this.setVisible(true);
 		
 		
 		//GUI Elemente beschriften
