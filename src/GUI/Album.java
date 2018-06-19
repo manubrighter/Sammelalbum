@@ -68,6 +68,9 @@ public class Album extends JFrame implements ActionListener{
 		LNation1.setFont(Font50);
 		
 		
+		P3.setLayout(new BorderLayout());
+		
+		
 		
 		this.setVisible(true); 
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //das Programm beenden wenn man es schliesst
