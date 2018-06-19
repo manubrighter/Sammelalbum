@@ -38,9 +38,10 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	{
 		//Anzeige Fenster erstellen (provisorische Werte) und sichtbar machen
 		this.setLayout(null);
-		this.setSize(622, 875);
-		this.setLocation(1,1);
-		this.setVisible(true);
+		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
+		this.setSize(1150, 650); //Grösse des Fensters definieren
+		this.setLocation(530, 350); //Ort des Fensters definieren
+		
 		
 		//GUI Elemente beschriften
 		bAlbumAnsehen = new JButton("Album Ansehen");
@@ -49,9 +50,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		bProgrammBeenden = new JButton ("Beenden");
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
 		
-		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
-		this.setSize(1150, 650); //Grösse des Fensters definieren
-		this.setLocation(530, 350); //Ort des Fensters definieren
+		
 	}
 	
 
