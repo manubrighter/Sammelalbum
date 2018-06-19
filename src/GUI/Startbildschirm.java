@@ -12,6 +12,7 @@
 
 package GUI;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,6 +20,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class Startbildschirm extends JFrame implements ActionListener {
 	
@@ -28,6 +30,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	private JButton bNeustarten;
 	private JButton bProgrammBeenden;
 	private JLabel lblFussballbilderSammelalbum;
+	private JPanel pStartbildschirm;
 	
 	//Erstellung Schriften
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
@@ -44,12 +47,27 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		this.setVisible(true);
 		
 		
-		//GUI Elemente beschriften
+		
+		//GUI Elemente beschriften und Designen
 		bAlbumAnsehen = new JButton("Album Ansehen");
+		bAlbumAnsehen.setBounds(100,100,100,100);
+		bAlbumAnsehen.setVisible(true);
+		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
+		
 		bNeustarten = new JButton ("Neustarten");
+		
 		bProgrammBeenden = new JButton ("Beenden");
+		
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
+		
+		
+		
+		//Panel Design und ins Fenster adden
+		pStartbildschirm = new JPanel ();
+		pStartbildschirm.setBounds(0 ,0 ,1150 ,650);
+		this.add(pStartbildschirm);
+
 		
 		
 	}
