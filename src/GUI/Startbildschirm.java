@@ -12,6 +12,7 @@
 
 package GUI;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -50,24 +51,36 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		
 		//GUI Elemente beschriften und Designen
 		bAlbumAnsehen = new JButton("Album Ansehen");
-
-		bAlbumAnsehen.setBounds(100,100,100,100);
 		bAlbumAnsehen.setVisible(true);
 		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
+		bPaeckchenOeffnen.setVisible(true);
 
 		bNeustarten = new JButton ("Neustarten");
+		bNeustarten.setVisible(true);
 		
 		bProgrammBeenden = new JButton ("Beenden");
+		bProgrammBeenden.setVisible(true);
 		
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
+		lblFussballbilderSammelalbum.setVisible(true);
 		
 		
 		
 		//Panel Design und ins Fenster adden
 		pStartbildschirm = new JPanel ();
-		pStartbildschirm.setBounds(0 ,0 ,1150 ,650);
+		pStartbildschirm.setBounds(0 ,0 ,1150 ,620);
+		pStartbildschirm.setBackground(Color.blue);
 		this.add(pStartbildschirm);
+		
+		//Border Layout für pStartbildschirm
+		pStartbildschirm.setLayout(new BorderLayout());
+		pStartbildschirm.add(bAlbumAnsehen, BorderLayout.WEST);
+		pStartbildschirm.add(bPaeckchenOeffnen, BorderLayout.EAST);
+		pStartbildschirm.add(bProgrammBeenden, BorderLayout.SOUTH);
+		pStartbildschirm.add(bNeustarten, BorderLayout.NORTH);
+		pStartbildschirm.add(lblFussballbilderSammelalbum, BorderLayout.CENTER);
+		
 
 		
 		
