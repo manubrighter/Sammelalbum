@@ -20,7 +20,7 @@ public class Album extends JFrame implements ActionListener{
 	private JButton B1;
 	private JTextField T1; 
 	private JLabel L1;  
-	private JPanel P1;
+	private JPanel Bild1, Bild2, Bild3, Bild4, Bild5, Bild6, Bild7, Bild8;
 	private JRadioButton R1;
 	private JCheckBox CH1;
 	private JComboBox CO1;
@@ -49,6 +49,11 @@ public class Album extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		
+		
+	}
+	
+	public static void main(String[] args) {
+		Album al = new Album();
 		
 	}
 	
