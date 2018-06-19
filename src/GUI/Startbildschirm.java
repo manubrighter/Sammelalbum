@@ -1,6 +1,6 @@
 /*ToDo
- * Alle Buttons Designen und visible machen
- * Layout integrieren (border?, grid? card?)
+ * Schön machen (Margin etc)
+ * Fonts anwenden
  * Action Listener Befehle
  */
 
@@ -18,6 +18,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -50,7 +51,7 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		
 		
 		//GUI Elemente beschriften und Designen
-		bAlbumAnsehen = new JButton("Album Ansehen");
+		bAlbumAnsehen = new JButton("    Album Ansehen");
 		bAlbumAnsehen.setVisible(true);
 		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
@@ -63,6 +64,8 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		bProgrammBeenden.setVisible(true);
 		
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
+		lblFussballbilderSammelalbum.setVerticalAlignment(JLabel.CENTER);
+		lblFussballbilderSammelalbum.setHorizontalAlignment(JLabel.CENTER);
 		lblFussballbilderSammelalbum.setVisible(true);
 		
 		
@@ -80,6 +83,7 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		pStartbildschirm.add(bProgrammBeenden, BorderLayout.SOUTH);
 		pStartbildschirm.add(bNeustarten, BorderLayout.NORTH);
 		pStartbildschirm.add(lblFussballbilderSammelalbum, BorderLayout.CENTER);
+		pStartbildschirm.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
 		
 
 		
