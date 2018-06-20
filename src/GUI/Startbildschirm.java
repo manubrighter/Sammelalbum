@@ -1,7 +1,5 @@
 /*ToDo
- * Schön machen (Margin etc)
- * Fonts anwenden
- * Action Listener Befehle
+ Neustarten implementieren
  */
 
 
