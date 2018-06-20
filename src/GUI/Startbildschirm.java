@@ -24,7 +24,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class Startbildschirm extends JFrame implements ActionListener{
+public class Startbildschirm extends JFrame implements ActionListener {
+	
 	
 	//Erstellung der GUI Elemente
 	private JButton bAlbumAnsehen;
@@ -61,21 +62,25 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		bAlbumAnsehen.setFont(Font30);
 		bAlbumAnsehen.setBackground(mygreen);
 		bAlbumAnsehen.setVisible(true);
+		bAlbumAnsehen.addActionListener(this);
 		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
 		bPaeckchenOeffnen.setFont(Font30);
 		bPaeckchenOeffnen.setBackground(mygreen);
 		bPaeckchenOeffnen.setVisible(true);
+		bPaeckchenOeffnen.addActionListener(this);
 
 		bNeustarten = new JButton ("Neustarten");
 		bNeustarten.setFont(Font30);
 		bNeustarten.setBackground(mygreen);
 		bNeustarten.setVisible(true);
+		bNeustarten.addActionListener(this);
 		
 		bProgrammBeenden = new JButton ("Beenden");
 		bProgrammBeenden.setFont(Font30);
 		bProgrammBeenden.setBackground(mygreen);
 		bProgrammBeenden.setVisible(true);
+		bProgrammBeenden.addActionListener(this);
 		
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
 		lblFussballbilderSammelalbum.setVerticalAlignment(JLabel.CENTER);
@@ -111,14 +116,28 @@ public class Startbildschirm extends JFrame implements ActionListener{
 	
 
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
+	public void actionPerformed(ActionEvent ae) {
 		
-		//GUI Elemente beschriftet
-		bAlbumAnsehen = new JButton("Album Ansehen");
-		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
-		bNeustarten = new JButton ("Neustarten");
-		bProgrammBeenden = new JButton ("Beenden");
-		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
+		if (ae.getSource() == bAlbumAnsehen)
+		{
+			Album album = new Album();
+		}
+		
+		if (ae.getSource() == bPaeckchenOeffnen)
+		{
+			bPaeckchenOeffnen.setText("Funktion nicht einsatzbereit");
+		}
+		
+		if (ae.getSource() == bNeustarten)
+		{
+			//Reset Pictures
+			//Meldung "Neugestartet
+		}
+		
+		if (ae.getSource() == bProgrammBeenden)
+		{
+			System.exit(0); //beendet Programm
+		}
 		
 	}
 
