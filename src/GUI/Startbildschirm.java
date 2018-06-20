@@ -37,6 +37,7 @@ public class Startbildschirm extends JFrame implements ActionListener{
 	//Erstellung Schriften
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
+	private Font Font30 = new Font("Arial", Font.BOLD, 30);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
 	
 	public Startbildschirm()
@@ -52,20 +53,25 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		
 		//GUI Elemente beschriften und Designen
 		bAlbumAnsehen = new JButton("    Album Ansehen");
+		bAlbumAnsehen.setFont(Font30);
 		bAlbumAnsehen.setVisible(true);
 		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
+		bPaeckchenOeffnen.setFont(Font30);
 		bPaeckchenOeffnen.setVisible(true);
 
 		bNeustarten = new JButton ("Neustarten");
+		bNeustarten.setFont(Font30);
 		bNeustarten.setVisible(true);
 		
 		bProgrammBeenden = new JButton ("Beenden");
+		bProgrammBeenden.setFont(Font30);
 		bProgrammBeenden.setVisible(true);
 		
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
 		lblFussballbilderSammelalbum.setVerticalAlignment(JLabel.CENTER);
 		lblFussballbilderSammelalbum.setHorizontalAlignment(JLabel.CENTER);
+		lblFussballbilderSammelalbum.setFont(Font30);
 		lblFussballbilderSammelalbum.setVisible(true);
 		
 		
