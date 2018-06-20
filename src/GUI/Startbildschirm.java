@@ -43,6 +43,7 @@ public class Startbildschirm extends JFrame implements ActionListener{
 	//Erstellung Farben
 	private Color myblue = new Color(66, 203, 244);
 	private Color myred = new Color(249, 79, 105);
+	private Color mygreen = new Color(161, 249, 78);
 	
 	public Startbildschirm()
 	{
@@ -58,18 +59,22 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		//GUI Elemente beschriften und Designen
 		bAlbumAnsehen = new JButton("Album Ansehen");
 		bAlbumAnsehen.setFont(Font30);
+		bAlbumAnsehen.setBackground(mygreen);
 		bAlbumAnsehen.setVisible(true);
 		
 		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
 		bPaeckchenOeffnen.setFont(Font30);
+		bPaeckchenOeffnen.setBackground(mygreen);
 		bPaeckchenOeffnen.setVisible(true);
 
 		bNeustarten = new JButton ("Neustarten");
 		bNeustarten.setFont(Font30);
+		bNeustarten.setBackground(mygreen);
 		bNeustarten.setVisible(true);
 		
 		bProgrammBeenden = new JButton ("Beenden");
 		bProgrammBeenden.setFont(Font30);
+		bProgrammBeenden.setBackground(mygreen);
 		bProgrammBeenden.setVisible(true);
 		
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
