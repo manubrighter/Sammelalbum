@@ -40,19 +40,23 @@ public class Startbildschirm extends JFrame implements ActionListener{
 	private Font Font30 = new Font("Arial", Font.BOLD, 30);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
 	
+	//Erstellung Farben
+	private Color myblue = new Color(66, 203, 244);
+	private Color myred = new Color(249, 79, 105);
+	
 	public Startbildschirm()
 	{
 		//Anzeige Fenster erstellen (provisorische Werte) und sichtbar machen
 		this.setLayout(null);
-		this.setResizable(false); //FenstergrÃ¶sse ist nicht verÃ¤nderbar
-		this.setSize(1150, 650); //GrÃ¶sse des Fensters definieren
-		this.setLocation(530, 350); //Ort des Fensters definieren
+		this.setResizable(false); //Fenstergrösse ist nicht verÃ¤nderbar
+		this.setSize(1150, 650); //Grösse des Fensters definieren
+		this.setLocation(400, 200); //Ort des Fensters definieren
 		this.setVisible(true);
 		
 		
 		
 		//GUI Elemente beschriften und Designen
-		bAlbumAnsehen = new JButton("    Album Ansehen");
+		bAlbumAnsehen = new JButton("Album Ansehen");
 		bAlbumAnsehen.setFont(Font30);
 		bAlbumAnsehen.setVisible(true);
 		
@@ -72,6 +76,8 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		lblFussballbilderSammelalbum.setVerticalAlignment(JLabel.CENTER);
 		lblFussballbilderSammelalbum.setHorizontalAlignment(JLabel.CENTER);
 		lblFussballbilderSammelalbum.setFont(Font30);
+		lblFussballbilderSammelalbum.setOpaque(true); //Transparent zur Anpassung der Hintergrundfarbe
+		lblFussballbilderSammelalbum.setBackground(myred);
 		lblFussballbilderSammelalbum.setVisible(true);
 		
 		
@@ -79,7 +85,7 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		//Panel Design und ins Fenster adden
 		pStartbildschirm = new JPanel ();
 		pStartbildschirm.setBounds(0 ,0 ,1150 ,620);
-		pStartbildschirm.setBackground(Color.blue);
+		pStartbildschirm.setBackground(myblue);
 		this.add(pStartbildschirm);
 		
 		//Border Layout für pStartbildschirm
@@ -104,7 +110,7 @@ public class Startbildschirm extends JFrame implements ActionListener{
 		
 		//GUI Elemente beschriftet
 		bAlbumAnsehen = new JButton("Album Ansehen");
-		bPaeckchenOeffnen = new JButton ("PÃ¤ckchen Ã¶ffnen");
+		bPaeckchenOeffnen = new JButton ("Päckchen öffnen");
 		bNeustarten = new JButton ("Neustarten");
 		bProgrammBeenden = new JButton ("Beenden");
 		lblFussballbilderSammelalbum = new JLabel ("Fussballbilder Sammelalbum");
