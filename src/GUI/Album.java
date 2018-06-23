@@ -62,6 +62,7 @@ public class Album extends JFrame implements ActionListener{
 		P5 = new JPanel();
 		P6 = new JPanel();
 		
+		
 		P1.setBounds(0, 0, 1150, 650);
 		
 		
@@ -143,6 +144,11 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik3.setVerticalAlignment(SwingConstants.CENTER);
 		lblStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStatistik4.setVerticalAlignment(SwingConstants.CENTER);
+		
+		
+		
+		////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
+		
 		
 		
 		this.setVisible(true); 
