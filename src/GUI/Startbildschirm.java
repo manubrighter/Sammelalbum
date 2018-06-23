@@ -52,6 +52,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		this.setSize(1150, 650); //Grösse des Fensters definieren
 		this.setLocation(400, 200); //Ort des Fensters definieren
 		this.setVisible(true);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //das Programm beenden wenn man es schliesst
 		
 		
 		
@@ -106,8 +107,6 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		pStartbildschirm.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
 		
 
-		
-		
 	}
 	
 
