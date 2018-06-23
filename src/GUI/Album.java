@@ -259,8 +259,10 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
+		//Alle invisible setzen
 		
-		
+		pREFAlbum.setVisible(false);
+
 		
 		
 		this.setVisible(true); 
