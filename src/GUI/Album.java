@@ -209,11 +209,11 @@ this.add(pREFAlbum);
 		
 		
 		pREFTopCHAlbum.setLayout(new BorderLayout());
-		pREFTopCHAlbum.add(lblRefree);
 		pREFTopCHAlbum.setBackground(Color.PINK);
 		lblRefree.setFont(Font50);
-		lblRefree.add(pREFTopCHAlbum, BorderLayout.CENTER);
-		bREFNaechsteSeite.add(pREFTopCHAlbum, BorderLayout.EAST);
+		pREFTopCHAlbum.add(lblRefree, BorderLayout.CENTER);
+		pREFTopCHAlbum.add(bREFVorherigeSeite, BorderLayout.EAST);
+		pREFTopCHAlbum.add(bREFNaechsteSeite, BorderLayout.WEST);
 		
 		lblRefree.setHorizontalAlignment(SwingConstants.CENTER);
 		lblRefree.setVerticalAlignment(SwingConstants.CENTER);
@@ -286,8 +286,8 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(true);
-		pREFAlbum.setVisible(false);
+		pCHAlbum.setVisible(false);
+		pREFAlbum.setVisible(true);
 		
 		
 		this.setVisible(true); 
