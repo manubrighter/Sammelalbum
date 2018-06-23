@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -136,6 +137,7 @@ public class Album extends JFrame implements ActionListener{
 		lblBild3.setVerticalAlignment(SwingConstants.CENTER);
 		lblBild4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBild4.setVerticalAlignment(SwingConstants.CENTER);
+		lblBild1.setIcon(new ImageIcon("C:\\Users\\Mustafa\\git\\Sammelalbum\\IMG\\JohanDjourou.jpg"));
 		
 		
 		pSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
