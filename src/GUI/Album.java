@@ -206,9 +206,17 @@ this.add(pREFAlbum);
 		pREFAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
 		
+		pREFTopCHAlbum.setLayout(new BorderLayout());
 		pREFTopCHAlbum.add(lblRefree);
 		pREFTopCHAlbum.setBackground(Color.PINK);
 		lblRefree.setFont(Font50);
+		lblRefree.add(pREFTopCHAlbum, BorderLayout.CENTER);
+		bREFNaechsteSeite.add(pREFTopCHAlbum, BorderLayout.EAST);
+		
+		lblRefree.setHorizontalAlignment(SwingConstants.CENTER);
+		lblRefree.setVerticalAlignment(SwingConstants.CENTER);
+		
+		
 		
 		
 		pREFSpielerAngaben.setLayout(new BorderLayout());
@@ -276,8 +284,8 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(true);
-		pREFAlbum.setVisible(false);
+		pCHAlbum.setVisible(false);
+		pREFAlbum.setVisible(true);
 		
 		
 		this.setVisible(true); 
