@@ -91,8 +91,14 @@ public class Album extends JFrame implements ActionListener{
 		pTopCHAlbum.setLayout(new BorderLayout());
 		pTopCHAlbum.add(lblSchweiz, BorderLayout.CENTER);
 		pTopCHAlbum.add(bNaechsteSeite, BorderLayout.EAST);
+		pTopCHAlbum.add(bVorherigeSeite, BorderLayout.WEST);
 		pTopCHAlbum.setBackground(Color.PINK);
 		lblSchweiz.setFont(Font50);
+		lblSchweiz.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSchweiz.setVerticalAlignment(SwingConstants.CENTER);
+		
+		bNaechsteSeite.setBackground(myblue);
+		bVorherigeSeite.setBackground(myblue);
 		
 		
 		pSpielerAngaben.setLayout(new BorderLayout());
@@ -178,6 +184,9 @@ public class Album extends JFrame implements ActionListener{
 		lblREFStatistik2 = new JLabel("Statistik");
 		lblREFStatistik3 = new JLabel("Statistik");
 		lblREFStatistik4 = new JLabel("Statistik");
+		bREFNaechsteSeite = new JButton("Nächste Seite");
+		bREFVorherigeSeite = new JButton("Vorherige Seite");
+		
 		
 		pREFAlbum = new JPanel();
 		pREFTopCHAlbum = new JPanel();
