@@ -21,7 +21,7 @@ public class Album extends JFrame implements ActionListener{
 	//Variablen initialisieren
 	private JButton bNaechsteSeite, bVorhaerigeSeite, bEinkleben;
 	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;  
-	private JPanel P1, P2, P3, P4, P5, P6;
+	private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
 
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
@@ -55,47 +55,47 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik3 = new JLabel("Statistik");
 		lblStatistik4 = new JLabel("Statistik");
 		
-		P1 = new JPanel();
-		P2 = new JPanel();
-		P3 = new JPanel();
-		P4 = new JPanel();
-		P5 = new JPanel();
-		P6 = new JPanel();
+		pAlbum = new JPanel();
+		pTopAlbum = new JPanel();
+		pSpielerAngaben = new JPanel();
+		pSpielerNamen = new JPanel();
+		pSpielerBilder = new JPanel();
+		pSpielerStats = new JPanel();
 		
-		P1.setBounds(0, 0, 1150, 650);
-		
-		
-		this.add(P1);
-		
-		P1.setLayout(new BorderLayout());
-		P1.add(P2, BorderLayout.NORTH);
-		P1.add(P3, BorderLayout.CENTER);
-		P1.setBackground(mygreen);
-		
-		P1.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
+		pAlbum.setBounds(0, 0, 1150, 650);
 		
 		
-		P2.add(lblSchweiz);
-		P2.setBackground(Color.PINK);
+		this.add(pAlbum);
+		
+		pAlbum.setLayout(new BorderLayout());
+		pAlbum.add(pTopAlbum, BorderLayout.NORTH);
+		pAlbum.add(pSpielerAngaben, BorderLayout.CENTER);
+		pAlbum.setBackground(mygreen);
+		
+		pAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
+		
+		
+		pTopAlbum.add(lblSchweiz);
+		pTopAlbum.setBackground(Color.PINK);
 		lblSchweiz.setFont(Font50);
 		
 		
-		P3.setLayout(new BorderLayout());
-		P3.add(P4, BorderLayout.NORTH);
-		P3.add(P5, BorderLayout.CENTER);
-		P3.add(P6, BorderLayout.SOUTH);
+		pSpielerAngaben.setLayout(new BorderLayout());
+		pSpielerAngaben.add(pSpielerNamen, BorderLayout.NORTH);
+		pSpielerAngaben.add(pSpielerBilder, BorderLayout.CENTER);
+		pSpielerAngaben.add(pSpielerStats, BorderLayout.SOUTH);
 		
-		P4.setBackground(myred);
-		P4.setLayout(new GridLayout(1, 4, 50, 50));
-		P4.add(lblName1);
-		P4.add(lblName2);
-		P4.add(lblName3);
-		P4.add(lblName4);
+		pSpielerNamen.setBackground(myred);
+		pSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
+		pSpielerNamen.add(lblName1);
+		pSpielerNamen.add(lblName2);
+		pSpielerNamen.add(lblName3);
+		pSpielerNamen.add(lblName4);
 		lblName1.setFont(Font20);
 		lblName2.setFont(Font20);
 		lblName3.setFont(Font20);
 		lblName4.setFont(Font20);
-		P4.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		pSpielerNamen.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 		lblName1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblName1.setVerticalAlignment(SwingConstants.CENTER);
 		lblName2.setHorizontalAlignment(SwingConstants.CENTER);
@@ -106,14 +106,14 @@ public class Album extends JFrame implements ActionListener{
 		lblName4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		
-		P5.setLayout(new GridLayout(1, 4, 10, 10));
-		P5.add(lblBild1);
-		P5.add(lblBild2);
-		P5.add(lblBild3);
-		P5.add(lblBild4);	
-		P5.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		pSpielerBilder.setLayout(new GridLayout(1, 4, 10, 10));
+		pSpielerBilder.add(lblBild1);
+		pSpielerBilder.add(lblBild2);
+		pSpielerBilder.add(lblBild3);
+		pSpielerBilder.add(lblBild4);	
+		pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 
-		P5.setBackground(myblue);
+		pSpielerBilder.setBackground(myblue);
 		lblBild1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBild1.setVerticalAlignment(SwingConstants.CENTER);
 		lblBild2.setHorizontalAlignment(SwingConstants.CENTER);
@@ -124,17 +124,17 @@ public class Album extends JFrame implements ActionListener{
 		lblBild4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		
-		P6.setLayout(new GridLayout(1, 4, 10, 10));
-		P6.add(lblStatistik1);
-		P6.add(lblStatistik2);
-		P6.add(lblStatistik3);
-		P6.add(lblStatistik4);
+		pSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
+		pSpielerStats.add(lblStatistik1);
+		pSpielerStats.add(lblStatistik2);
+		pSpielerStats.add(lblStatistik3);
+		pSpielerStats.add(lblStatistik4);
 		lblStatistik1.setFont(Font20);
 		lblStatistik2.setFont(Font20);
 		lblStatistik3.setFont(Font20);
 		lblStatistik4.setFont(Font20);
-		P6.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
-		P6.setBackground(Color.GRAY);
+		pSpielerStats.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		pSpielerStats.setBackground(Color.GRAY);
 		lblStatistik1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStatistik1.setVerticalAlignment(SwingConstants.CENTER);
 		lblStatistik2.setHorizontalAlignment(SwingConstants.CENTER);
