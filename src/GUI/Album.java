@@ -48,7 +48,7 @@ public class Album extends JFrame implements ActionListener{
 		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
 		this.setSize(1150, 650); //Grösse des Fensters definieren
 		this.setLocation(530, 350); //Ort des Fensters definieren
-		
+		 
 		//Bausteine definieren
 		lblBild1 = new JLabel();
 		lblBild2 = new JLabel();
