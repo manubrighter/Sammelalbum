@@ -18,10 +18,9 @@ import javax.swing.SwingConstants;
 public class Album extends JFrame implements ActionListener{
 	
 	
-	//Variablen initialisieren
+	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private JButton bNaechsteSeite, bVorhaerigeSeite, bEinkleben;
 	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;  
-	private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
 
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
@@ -30,6 +29,12 @@ public class Album extends JFrame implements ActionListener{
 	private Color mygreen = new Color(161, 249, 78);
 	private Color myred = new Color (255, 80, 80);
 	private Color myblue = new Color (102, 204, 255);
+	
+	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
+	
+	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblREFSchweiz;  
+	private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
+	
 	
 
 	
@@ -145,12 +150,6 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		
-		
-		////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
-		
-		private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblREFSchweiz;  
-		private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
 		
 		
 		
