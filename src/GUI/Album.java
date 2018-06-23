@@ -68,7 +68,7 @@ public class Album extends JFrame implements ActionListener{
 		pSpielerAngaben = new JPanel();
 		pSpielerNamen = new JPanel();
 		pSpielerBilder = new JPanel();
-		pSpielerStats = new JPanel();
+		pSpielerStats = new JPanel(); 
 		
 		pAlbum.setBounds(0, 0, 1150, 650);
 
@@ -259,8 +259,10 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
+		//Alle invisible setzen
 		
-		
+		pREFAlbum.setVisible(false);
+
 		
 		
 		this.setVisible(true); 
