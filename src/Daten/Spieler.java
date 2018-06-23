@@ -14,13 +14,13 @@ public class Spieler extends Mensch{
 	public void SpielerString() {
 		StringBuilder sbSpieler = new StringBuilder();
 
-		sbSpieler.append("ID = ");
+		sbSpieler.append("ID: ");
 		sbSpieler.append(this.ID);
 
-		sbSpieler.append(", Alter = ");
+		sbSpieler.append(", Alter: ");
 		sbSpieler.append(this.Alter);
 		
-		sbSpieler.append(", Anzahl Spiele = ");
+		sbSpieler.append(", Anzahl Spiele: ");
 		sbSpieler.append(this.anzSpiele);
 		System.out.println(sbSpieler);
 	}

@@ -9,17 +9,17 @@ public class Trainer extends Mensch{
 		this.Funktion = Funktion;
 	}
 
-	public void TrainerString() {
+	public String TrainerString() {
 		StringBuilder sbTrainer = new StringBuilder();
 
-		sbTrainer.append("ID = ");
+		sbTrainer.append("ID: ");
 		sbTrainer.append(this.ID);
 
-		sbTrainer.append(", Alter = ");
+		sbTrainer.append(", Alter: ");
 		sbTrainer.append(this.Alter);
 		
-		sbTrainer.append(", Funktion = ");
+		sbTrainer.append(", Funktion: ");
 		sbTrainer.append(this.Funktion);
-		System.out.println(sbTrainer);
+		return sbTrainer.toString();
 	}
 }
