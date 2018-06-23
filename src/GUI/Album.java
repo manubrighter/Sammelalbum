@@ -114,7 +114,6 @@ public class Album extends JFrame implements ActionListener{
 		
 		
 		this.setVisible(true); 
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //das Programm beenden wenn man es schliesst
 	}
 	
 	
