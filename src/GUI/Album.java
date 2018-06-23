@@ -154,7 +154,6 @@ public class Album extends JFrame implements ActionListener{
 	
 	public static void main(String[] args) {
 		Album al = new Album();
-		System.out.println("Hey");
 		
 	}
 	
