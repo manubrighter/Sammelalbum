@@ -286,8 +286,8 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(false);
-		pREFAlbum.setVisible(true);
+		pCHAlbum.setVisible(true);
+		pREFAlbum.setVisible(false);
 		
 		
 		this.setVisible(true); 
