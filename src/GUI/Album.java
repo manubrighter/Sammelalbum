@@ -33,7 +33,7 @@ public class Album extends JFrame implements ActionListener{
 	
 	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 	
-	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblREFSchweiz;  
+	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblRefree;  
 	private JPanel pREFAlbum, pREFTopAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
 	
 	
@@ -162,15 +162,104 @@ public class Album extends JFrame implements ActionListener{
 		lblREFBild2 = new JLabel();
 		lblREFBild3 = new JLabel();
 		lblREFBild4 = new JLabel();
-		lblREFSchweiz= new JLabel("Schweiz");
-		lblREFName1 = new JLabel("Johan Djourou");
-		lblREFName2 = new JLabel("Granit Xhaka");
-		lblREFName3 = new JLabel("Manuel Akanji");
-		lblREFName4 = new JLabel("Haris Seferovic");
+		lblRefree= new JLabel("Unparteische");
+		lblREFName1 = new JLabel("Fahad Al-Mirdasi");
+		lblREFName2 = new JLabel("Alireza Faghani");
+		lblREFName3 = new JLabel("Ryuji Sato");
+		lblREFName4 = new JLabel("Nawaf Shukralla");
 		lblREFStatistik1 = new JLabel("Statistik");
 		lblREFStatistik2 = new JLabel("Statistik");
 		lblREFStatistik3 = new JLabel("Statistik");
 		lblREFStatistik4 = new JLabel("Statistik");
+		
+		pREFAlbum = new JPanel();
+		pREFTopAlbum = new JPanel();
+		pREFSpielerAngaben = new JPanel();
+		pREFSpielerNamen = new JPanel();
+		pREFSpielerBilder = new JPanel();
+		pREFSpielerStats = new JPanel();
+		
+		
+this.add(pREFAlbum);
+		
+		pREFAlbum.setLayout(new BorderLayout());
+		pREFAlbum.add(pREFTopAlbum, BorderLayout.NORTH);
+		pREFAlbum.add(pREFSpielerAngaben, BorderLayout.CENTER);
+		pREFAlbum.setBackground(mygreen);
+		
+		pAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
+		
+		
+		pREFTopAlbum.add(lblRefree);
+		pREFTopAlbum.setBackground(Color.PINK);
+		lblRefree.setFont(Font50);
+		
+		
+		pREFSpielerAngaben.setLayout(new BorderLayout());
+		pREFSpielerAngaben.add(pSpielerNamen, BorderLayout.NORTH);
+		pREFSpielerAngaben.add(pSpielerBilder, BorderLayout.CENTER);
+		pREFSpielerAngaben.add(pSpielerStats, BorderLayout.SOUTH);
+		
+		pREFSpielerNamen.setBackground(myred);
+		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
+		pREFSpielerNamen.add(lblName1);
+		pREFSpielerNamen.add(lblName2);
+		pREFSpielerNamen.add(lblName3);
+		pREFSpielerNamen.add(lblName4);
+		lblREFName1.setFont(Font20);
+		lblREFName2.setFont(Font20);
+		lblREFName3.setFont(Font20);
+		lblREFName4.setFont(Font20);
+		pREFSpielerNamen.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		lblREFName1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFName1.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFName2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFName2.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFName3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFName3.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFName4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFName4.setVerticalAlignment(SwingConstants.CENTER);
+		
+		
+		pREFSpielerBilder.setLayout(new GridLayout(1, 4, 10, 10));
+		pREFSpielerBilder.add(lblREFBild1);
+		pREFSpielerBilder.add(lblREFBild2);
+		pREFSpielerBilder.add(lblREFBild3);
+		pREFSpielerBilder.add(lblREFBild4);	
+		pREFSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+
+		pREFSpielerBilder.setBackground(myblue);
+		lblREFBild1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFBild1.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFBild2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFBild2.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFBild3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFBild3.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFBild4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFBild4.setVerticalAlignment(SwingConstants.CENTER);
+		
+		
+		pREFSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
+		pREFSpielerStats.add(lblStatistik1);
+		pREFSpielerStats.add(lblStatistik2);
+		pREFSpielerStats.add(lblStatistik3);
+		pREFSpielerStats.add(lblStatistik4);
+		lblREFStatistik1.setFont(Font20);
+		lblREFStatistik2.setFont(Font20);
+		lblREFStatistik3.setFont(Font20);
+		lblREFStatistik4.setFont(Font20);
+		pREFSpielerStats.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		pREFSpielerStats.setBackground(Color.GRAY);
+		lblREFStatistik1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFStatistik1.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFStatistik2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFStatistik2.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFStatistik3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFStatistik3.setVerticalAlignment(SwingConstants.CENTER);
+		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
+		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
+		
+		
 		
 		
 		this.setVisible(true); 
