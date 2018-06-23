@@ -143,7 +143,7 @@ public class Album extends JFrame implements ActionListener{
 		lblBild3.setVerticalAlignment(SwingConstants.CENTER);
 		lblBild4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBild4.setVerticalAlignment(SwingConstants.CENTER);
-		lblBild1.setIcon(new ImageIcon("C:\\Users\\Mustafa\\git\\Sammelalbum\\IMG\\JohanDjourou.jpg"));
+		lblBild1.setIcon(new ImageIcon("..\\Sammelalbum\\IMG\\JohanDjourou.jpg"));
 		
 		
 		pSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
@@ -286,8 +286,8 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(false);
-		pREFAlbum.setVisible(true);
+		pCHAlbum.setVisible(true);
+		pREFAlbum.setVisible(false);
 		
 		
 		this.setVisible(true); 
