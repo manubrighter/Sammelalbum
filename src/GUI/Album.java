@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 public class Album extends JFrame implements ActionListener{
 	
@@ -26,8 +27,6 @@ public class Album extends JFrame implements ActionListener{
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
 	
-	private Color myred = new Color (255, 80, 80);
-	private Color mygreen = new Color(161, 249, 78);
 
 	
 	public Album() {
@@ -67,7 +66,7 @@ public class Album extends JFrame implements ActionListener{
 		P1.setLayout(new BorderLayout());
 		P1.add(P2, BorderLayout.NORTH);
 		P1.add(P3, BorderLayout.CENTER);
-		P1.setBackground(mygreen); 
+		P1.setBackground(Color.GREEN);
 		
 		P1.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
@@ -82,7 +81,7 @@ public class Album extends JFrame implements ActionListener{
 		P3.add(P5, BorderLayout.CENTER);
 		P3.add(P6, BorderLayout.SOUTH);
 		
-		P4.setBackground(myred);
+		P4.setBackground(Color.RED);
 		P4.setLayout(new GridLayout(1, 4, 50, 50));
 		P4.add(LName1);
 		P4.add(LName2);
@@ -93,6 +92,14 @@ public class Album extends JFrame implements ActionListener{
 		LName3.setFont(Font20);
 		LName4.setFont(Font20);
 		P4.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		LName1.setHorizontalAlignment(SwingConstants.CENTER);
+		LName1.setVerticalAlignment(SwingConstants.CENTER);
+		LName2.setHorizontalAlignment(SwingConstants.CENTER);
+		LName2.setVerticalAlignment(SwingConstants.CENTER);
+		LName3.setHorizontalAlignment(SwingConstants.CENTER);
+		LName3.setVerticalAlignment(SwingConstants.CENTER);
+		LName4.setHorizontalAlignment(SwingConstants.CENTER);
+		LName4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		
 		P5.setLayout(new GridLayout(1, 4, 10, 10));
@@ -101,6 +108,15 @@ public class Album extends JFrame implements ActionListener{
 		P5.add(LBild3);
 		P5.add(LBild4);	
 		P5.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		P5.setBackground(Color.BLUE);
+		LBild1.setHorizontalAlignment(SwingConstants.CENTER);
+		LBild1.setVerticalAlignment(SwingConstants.CENTER);
+		LBild2.setHorizontalAlignment(SwingConstants.CENTER);
+		LBild2.setVerticalAlignment(SwingConstants.CENTER);
+		LBild3.setHorizontalAlignment(SwingConstants.CENTER);
+		LBild3.setVerticalAlignment(SwingConstants.CENTER);
+		LBild4.setHorizontalAlignment(SwingConstants.CENTER);
+		LBild4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		
 		P6.setLayout(new GridLayout(1, 4, 10, 10));
@@ -113,9 +129,19 @@ public class Album extends JFrame implements ActionListener{
 		LStatistik3.setFont(Font20);
 		LStatistik4.setFont(Font20);
 		P6.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		P6.setBackground(Color.GRAY);
+		LStatistik1.setHorizontalAlignment(SwingConstants.CENTER);
+		LStatistik1.setVerticalAlignment(SwingConstants.CENTER);
+		LStatistik2.setHorizontalAlignment(SwingConstants.CENTER);
+		LStatistik2.setVerticalAlignment(SwingConstants.CENTER);
+		LStatistik3.setHorizontalAlignment(SwingConstants.CENTER);
+		LStatistik3.setVerticalAlignment(SwingConstants.CENTER);
+		LStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
+		LStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		
 		this.setVisible(true); 
+		
 	}
 	
 	
