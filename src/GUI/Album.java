@@ -19,9 +19,9 @@ public class Album extends JFrame implements ActionListener{
 	
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	private JButton bNaechsteSeite, bVorhaerigeSeite, bEinkleben;
+	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben;
 	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;
-	private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
+	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
 
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
@@ -33,8 +33,9 @@ public class Album extends JFrame implements ActionListener{
 	
 	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 	
+	private JButton bREFNaechsteSeite, bREFVorherigeSeite, bREFEinkleben;
 	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblRefree;  
-	private JPanel pREFAlbum, pREFTopAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
+	private JPanel pREFAlbum, pREFTopCHAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
 	
 	
 
@@ -62,31 +63,33 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik2 = new JLabel("Statistik");
 		lblStatistik3 = new JLabel("Statistik");
 		lblStatistik4 = new JLabel("Statistik");
+		bNaechsteSeite = new JButton("Nächste Seite");
+		bVorherigeSeite = new JButton("Vorherige Seite");
 		
-		pAlbum = new JPanel();
-		pTopAlbum = new JPanel();
+		pCHAlbum = new JPanel();
+		pTopCHAlbum = new JPanel();
 		pSpielerAngaben = new JPanel();
 		pSpielerNamen = new JPanel();
 		pSpielerBilder = new JPanel();
 		pSpielerStats = new JPanel(); 
 		
-		pAlbum.setBounds(0, 0, 1150, 650);
+		pCHAlbum.setBounds(0, 0, 1150, 650);
 
 		
 		
-		this.add(pAlbum);
+		this.add(pCHAlbum);
 		
-		pAlbum.setLayout(new BorderLayout());
-		pAlbum.add(pTopAlbum, BorderLayout.NORTH);
-		pAlbum.add(pSpielerAngaben, BorderLayout.CENTER);
-		pAlbum.setBackground(mygreen);
+		pCHAlbum.setLayout(new BorderLayout());
+		pCHAlbum.add(pTopCHAlbum, BorderLayout.NORTH);
+		pCHAlbum.add(pSpielerAngaben, BorderLayout.CENTER);
+		pCHAlbum.setBackground(mygreen);
 
 		
-		pAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
+		pCHAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
 		
-		pTopAlbum.add(lblSchweiz);
-		pTopAlbum.setBackground(Color.PINK);
+		pTopCHAlbum.add(lblSchweiz);
+		pTopCHAlbum.setBackground(Color.PINK);
 		lblSchweiz.setFont(Font50);
 		
 		
@@ -174,7 +177,7 @@ public class Album extends JFrame implements ActionListener{
 		lblREFStatistik4 = new JLabel("Statistik");
 		
 		pREFAlbum = new JPanel();
-		pREFTopAlbum = new JPanel();
+		pREFTopCHAlbum = new JPanel();
 		pREFSpielerAngaben = new JPanel();
 		pREFSpielerNamen = new JPanel();
 		pREFSpielerBilder = new JPanel();
@@ -185,7 +188,7 @@ public class Album extends JFrame implements ActionListener{
 this.add(pREFAlbum);
 		
 		pREFAlbum.setLayout(new BorderLayout());
-		pREFAlbum.add(pREFTopAlbum, BorderLayout.NORTH);
+		pREFAlbum.add(pREFTopCHAlbum, BorderLayout.NORTH);
 		pREFAlbum.add(pREFSpielerAngaben, BorderLayout.CENTER);
 		pREFAlbum.setBackground(mygreen);
 		
@@ -193,8 +196,8 @@ this.add(pREFAlbum);
 		pREFAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
 		
-		pREFTopAlbum.add(lblRefree);
-		pREFTopAlbum.setBackground(Color.PINK);
+		pREFTopCHAlbum.add(lblRefree);
+		pREFTopCHAlbum.setBackground(Color.PINK);
 		lblRefree.setFont(Font50);
 		
 		
@@ -262,9 +265,9 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		//Alle invisible setzen
-		pAlbum.setVisible(false);
-		pREFAlbum.setVisible(true);
+		//Album visible, REF invisible
+		pCHAlbum.setVisible(true);
+		pREFAlbum.setVisible(false);
 		
 		
 		this.setVisible(true); 
