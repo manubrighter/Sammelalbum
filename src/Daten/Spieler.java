@@ -11,7 +11,7 @@ public class Spieler extends Mensch{
 		this.anzSpiele = anzSpiele;
 	}
 
-	public void SpielerString() {
+	public String SpielerString() {
 		StringBuilder sbSpieler = new StringBuilder();
 
 		sbSpieler.append("ID: ");
@@ -22,7 +22,7 @@ public class Spieler extends Mensch{
 		
 		sbSpieler.append(", Anzahl Spiele: ");
 		sbSpieler.append(this.anzSpiele);
-		System.out.println(sbSpieler);
+		return sbSpieler.toString();
 	}
 	
 }

@@ -24,9 +24,13 @@ public class HauptLogik {
 		unparteiische.createUnparteiische(7, 32, 87);
 		unparteiische.createUnparteiische(8, 28, 187);
 		
-		spieler.SpielerString();
-		trainer.TrainerString();
-		unparteiische.UnparteiischeString();
+		/*
+		List<Mensch> list = new ArrayList<Mensch>();
+		
+        for(Mensch m: list){
+            System.out.println(m);
+        }*/
 	}
 
+	
 }

@@ -9,7 +9,7 @@ public class Unparteiische extends Mensch{
 		this.AnzPfiffe = AnzPfiffe;
 	}
 
-	public void UnparteiischeString() {
+	public String UnparteiischeString() {
 		StringBuilder sbTrainer = new StringBuilder();
 
 		sbTrainer.append("ID: ");
@@ -20,6 +20,6 @@ public class Unparteiische extends Mensch{
 		
 		sbTrainer.append(", Anzahl Pfiffe: ");
 		sbTrainer.append(this.AnzPfiffe);
-		System.out.println(sbTrainer);
+		return sbTrainer.toString();
 	}
 }
