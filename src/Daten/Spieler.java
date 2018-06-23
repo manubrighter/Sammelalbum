@@ -27,7 +27,7 @@ public class Spieler extends Mensch{
 	
 	public static void main(String[] args) {
 		Spieler spieler = new Spieler();
-		spieler.createSpieler(1, 20, 15);
+		spieler.createSpieler(1, 25, 15);
 		
 		spieler.spString();
 		
