@@ -12,17 +12,17 @@ public class Spieler extends Mensch{
 	}
 
 	public void SpielerString() {
-		StringBuilder sb = new StringBuilder();
+		StringBuilder sbSpieler = new StringBuilder();
 
-		sb.append("ID = ");
-		sb.append(this.ID);
+		sbSpieler.append("ID = ");
+		sbSpieler.append(this.ID);
 
-		sb.append(", Alter = ");
-		sb.append(this.Alter);
+		sbSpieler.append(", Alter = ");
+		sbSpieler.append(this.Alter);
 		
-		sb.append(", Anzahl Spiele = ");
-		sb.append(this.anzSpiele);
-		System.out.println(sb);
+		sbSpieler.append(", Anzahl Spiele = ");
+		sbSpieler.append(this.anzSpiele);
+		System.out.println(sbSpieler);
 	}
 	
 	public static void main(String[] args) {

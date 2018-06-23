@@ -180,6 +180,7 @@ public class Album extends JFrame implements ActionListener{
 		pREFSpielerBilder = new JPanel();
 		pREFSpielerStats = new JPanel();
 		
+		pREFAlbum.setBounds(0, 0, 1150, 650);
 		
 this.add(pREFAlbum);
 		
@@ -188,7 +189,8 @@ this.add(pREFAlbum);
 		pREFAlbum.add(pREFSpielerAngaben, BorderLayout.CENTER);
 		pREFAlbum.setBackground(mygreen);
 		
-		pAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
+		
+		pREFAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
 		
 		pREFTopAlbum.add(lblRefree);
@@ -197,16 +199,16 @@ this.add(pREFAlbum);
 		
 		
 		pREFSpielerAngaben.setLayout(new BorderLayout());
-		pREFSpielerAngaben.add(pSpielerNamen, BorderLayout.NORTH);
-		pREFSpielerAngaben.add(pSpielerBilder, BorderLayout.CENTER);
-		pREFSpielerAngaben.add(pSpielerStats, BorderLayout.SOUTH);
+		pREFSpielerAngaben.add(pREFSpielerNamen, BorderLayout.NORTH);
+		pREFSpielerAngaben.add(pREFSpielerBilder, BorderLayout.CENTER);
+		pREFSpielerAngaben.add(pREFSpielerStats, BorderLayout.SOUTH);
 		
 		pREFSpielerNamen.setBackground(myred);
 		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
-		pREFSpielerNamen.add(lblName1);
-		pREFSpielerNamen.add(lblName2);
-		pREFSpielerNamen.add(lblName3);
-		pREFSpielerNamen.add(lblName4);
+		pREFSpielerNamen.add(lblREFName1);
+		pREFSpielerNamen.add(lblREFName2);
+		pREFSpielerNamen.add(lblREFName3);
+		pREFSpielerNamen.add(lblREFName4);
 		lblREFName1.setFont(Font20);
 		lblREFName2.setFont(Font20);
 		lblREFName3.setFont(Font20);
@@ -241,10 +243,10 @@ this.add(pREFAlbum);
 		
 		
 		pREFSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
-		pREFSpielerStats.add(lblStatistik1);
-		pREFSpielerStats.add(lblStatistik2);
-		pREFSpielerStats.add(lblStatistik3);
-		pREFSpielerStats.add(lblStatistik4);
+		pREFSpielerStats.add(lblREFStatistik1);
+		pREFSpielerStats.add(lblREFStatistik2);
+		pREFSpielerStats.add(lblREFStatistik3);
+		pREFSpielerStats.add(lblREFStatistik4);
 		lblREFStatistik1.setFont(Font20);
 		lblREFStatistik2.setFont(Font20);
 		lblREFStatistik3.setFont(Font20);
@@ -261,9 +263,8 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//Alle invisible setzen
-		
-		pREFAlbum.setVisible(false);
-
+		pAlbum.setVisible(false);
+		pREFAlbum.setVisible(true);
 		
 		
 		this.setVisible(true); 

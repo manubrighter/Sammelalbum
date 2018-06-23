@@ -5,21 +5,21 @@ public class Trainer extends Mensch{
 	private String Funktion;
 	
 	public void createTrainer(int ID, int Alter, String Funktion) {
-		super.createSpieler(ID, Alter, Funktion);
+		super.createTrainer(ID, Alter, Funktion);
 		this.Funktion = Funktion;
 	}
 
-	public void SpielerString() {
-		StringBuilder sb = new StringBuilder();
+	public void TrainerString() {
+		StringBuilder sbTrainer = new StringBuilder();
 
-		sb.append("ID = ");
-		sb.append(this.ID);
+		sbTrainer.append("ID = ");
+		sbTrainer.append(this.ID);
 
-		sb.append(", Alter = ");
-		sb.append(this.Alter);
+		sbTrainer.append(", Alter = ");
+		sbTrainer.append(this.Alter);
 		
-		sb.append(", Anzahl Spiele = ");
-		sb.append(this.Funktion);
-		System.out.println(sb);
+		sbTrainer.append(", Funktion = ");
+		sbTrainer.append(this.Funktion);
+		System.out.println(sbTrainer);
 	}
 }
