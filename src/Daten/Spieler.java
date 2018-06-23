@@ -25,11 +25,4 @@ public class Spieler extends Mensch{
 		System.out.println(sbSpieler);
 	}
 	
-	public static void main(String[] args) {
-		Spieler spieler = new Spieler();
-		spieler.createSpieler(1, 25, 15);
-		
-		spieler.SpielerString();
-		
-	}
 }
