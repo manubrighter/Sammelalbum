@@ -26,6 +26,8 @@ public class Album extends JFrame implements ActionListener{
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
 	
+	private Color myred = new Color (255, 80, 80);
+	private Color mygreen = new Color(161, 249, 78);
 
 	
 	public Album() {
@@ -65,7 +67,7 @@ public class Album extends JFrame implements ActionListener{
 		P1.setLayout(new BorderLayout());
 		P1.add(P2, BorderLayout.NORTH);
 		P1.add(P3, BorderLayout.CENTER);
-		P1.setBackground(Color.GREEN);
+		P1.setBackground(mygreen);
 		
 		P1.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
@@ -80,7 +82,7 @@ public class Album extends JFrame implements ActionListener{
 		P3.add(P5, BorderLayout.CENTER);
 		P3.add(P6, BorderLayout.SOUTH);
 		
-		P4.setBackground(Color.RED);
+		P4.setBackground(myred);
 		P4.setLayout(new GridLayout(1, 4, 50, 50));
 		P4.add(LName1);
 		P4.add(LName2);
