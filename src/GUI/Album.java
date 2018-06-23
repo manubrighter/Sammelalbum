@@ -67,7 +67,7 @@ public class Album extends JFrame implements ActionListener{
 		P1.setLayout(new BorderLayout());
 		P1.add(P2, BorderLayout.NORTH);
 		P1.add(P3, BorderLayout.CENTER);
-		P1.setBackground(mygreen);
+		P1.setBackground(mygreen); 
 		
 		P1.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
