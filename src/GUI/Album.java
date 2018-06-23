@@ -87,8 +87,9 @@ public class Album extends JFrame implements ActionListener{
 		
 		pCHAlbum.setBorder(BorderFactory.createEmptyBorder(15/*top*/, 40/*left*/, 100/*bottom*/, 40/*right*/));
 		
-		
-		pTopCHAlbum.add(lblSchweiz);
+		pTopCHAlbum.setLayout(new BorderLayout());
+		pTopCHAlbum.add(lblSchweiz, BorderLayout.CENTER);
+		pTopCHAlbum.add(bNaechsteSeite, BorderLayout.EAST);
 		pTopCHAlbum.setBackground(Color.PINK);
 		lblSchweiz.setFont(Font50);
 		
