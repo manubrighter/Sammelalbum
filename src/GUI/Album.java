@@ -20,7 +20,8 @@ public class Album extends JFrame implements ActionListener{
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private JButton bNaechsteSeite, bVorhaerigeSeite, bEinkleben;
-	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;  
+	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;
+	private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
 
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
@@ -33,13 +34,15 @@ public class Album extends JFrame implements ActionListener{
 	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 	
 	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblREFSchweiz;  
-	private JPanel pAlbum, pTopAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
+	private JPanel pREFAlbum, pREFTopAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
 	
 	
 
 	
 	public Album() {
 		this.setLayout(null); 
+		
+		////////////////////////////////////////////   Schweiz   /////////////////////////////////////////////////////////////////////
 		
 		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
 		this.setSize(1150, 650); //Grösse des Fensters definieren
@@ -152,8 +155,22 @@ public class Album extends JFrame implements ActionListener{
 		
 		
 		
+		////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 		
-		
+		//Bausteine definieren
+		lblREFBild1 = new JLabel();
+		lblREFBild2 = new JLabel();
+		lblREFBild3 = new JLabel();
+		lblREFBild4 = new JLabel();
+		lblREFSchweiz= new JLabel("Schweiz");
+		lblREFName1 = new JLabel("Johan Djourou");
+		lblREFName2 = new JLabel("Granit Xhaka");
+		lblREFName3 = new JLabel("Manuel Akanji");
+		lblREFName4 = new JLabel("Haris Seferovic");
+		lblREFStatistik1 = new JLabel("Statistik");
+		lblREFStatistik2 = new JLabel("Statistik");
+		lblREFStatistik3 = new JLabel("Statistik");
+		lblREFStatistik4 = new JLabel("Statistik");
 		
 		
 		this.setVisible(true); 
