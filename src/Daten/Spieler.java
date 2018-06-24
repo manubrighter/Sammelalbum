@@ -10,6 +10,7 @@ public class Spieler extends Mensch{
 		super.createSpieler(ID, Alter, anzSpiele);
 		this.anzSpiele = anzSpiele;
 	}
+	
 
 	public String SpielerString() {
 		StringBuilder sbSpieler = new StringBuilder();

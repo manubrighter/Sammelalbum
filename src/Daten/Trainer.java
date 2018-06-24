@@ -21,5 +21,6 @@ public class Trainer extends Mensch{
 		sbTrainer.append(", Funktion: ");
 		sbTrainer.append(this.Funktion);
 		return sbTrainer.toString();
+		
 	}
 }
