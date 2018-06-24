@@ -175,7 +175,7 @@ public class Album extends JFrame implements ActionListener{
 		lblREFBild2 = new JLabel();
 		lblREFBild3 = new JLabel();
 		lblREFBild4 = new JLabel();
-		lblRefree= new JLabel("Unparteische");
+		lblRefree= new JLabel("Unparteiische");
 		lblREFName1 = new JLabel("Fahad Al-Mirdasi");
 		lblREFName2 = new JLabel("Alireza Faghani");
 		lblREFName3 = new JLabel("Ryuji Sato");
@@ -212,12 +212,16 @@ this.add(pREFAlbum);
 		pREFTopCHAlbum.setBackground(Color.PINK);
 		lblRefree.setFont(Font50);
 		pREFTopCHAlbum.add(lblRefree, BorderLayout.CENTER);
-		pREFTopCHAlbum.add(bREFVorherigeSeite, BorderLayout.EAST);
-		pREFTopCHAlbum.add(bREFNaechsteSeite, BorderLayout.WEST);
+		pREFTopCHAlbum.add(bREFVorherigeSeite, BorderLayout.WEST);
+		pREFTopCHAlbum.add(bREFNaechsteSeite, BorderLayout.EAST);
+		
 		
 		lblRefree.setHorizontalAlignment(SwingConstants.CENTER);
 		lblRefree.setVerticalAlignment(SwingConstants.CENTER);
 		
+		//Buttons Unparteiische Schrift setzen
+		bREFVorherigeSeite.setFont(Font20);
+		bREFNaechsteSeite.setFont(Font20);
 		
 		
 		
@@ -286,8 +290,8 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(true);
-		pREFAlbum.setVisible(false);
+		pCHAlbum.setVisible(false);
+		pREFAlbum.setVisible(true);
 		
 		
 		this.setVisible(true); 
