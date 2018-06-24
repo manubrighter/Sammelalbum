@@ -309,7 +309,9 @@ this.add(pREFAlbum);
 	}
 	
 	
-	
+	/**
+	 * Actionlistener
+	 */
 	@Override
 	public void actionPerformed(ActionEvent ae) {
 		if(ae.getSource() == this.bNaechsteSeite){
@@ -321,7 +323,7 @@ this.add(pREFAlbum);
 			pREFAlbum.setVisible(false);
 		}
 		
-		
+		 
 		
 	}
 	
