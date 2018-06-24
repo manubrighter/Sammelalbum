@@ -294,8 +294,8 @@ this.add(pREFAlbum);
 		bREFVorherigeSeite.addActionListener(this);	
 		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(false);
-		pREFAlbum.setVisible(true);
+		pCHAlbum.setVisible(true);
+		pREFAlbum.setVisible(false);
 		
 		bVorherigeSeite.setEnabled(false);
 		bNaechsteSeite.setEnabled(true);
