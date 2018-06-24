@@ -291,10 +291,20 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		//Album visible, REF invisible
-		pCHAlbum.setVisible(false);
-		pREFAlbum.setVisible(true);
+		//add to Actionlistener
+		bNaechsteSeite.addActionListener(this);
+		bREFVorherigeSeite.addActionListener(this);
 		
+		
+		//Album visible, REF invisible
+		pCHAlbum.setVisible(true);
+		pREFAlbum.setVisible(false);
+		
+		bVorherigeSeite.setEnabled(false);
+		bNaechsteSeite.setEnabled(true);
+		
+		bREFVorherigeSeite.setEnabled(true);
+		bREFNaechsteSeite.setEnabled(false);
 		
 		this.setVisible(true); 
 		
