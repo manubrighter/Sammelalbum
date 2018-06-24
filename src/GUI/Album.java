@@ -1,3 +1,11 @@
+/*ToDo
+ * Statt ein Spieler ein Manager einfügen
+ * Alle Bilder im Projekt speichern
+ * Alle JButtons definieren (addAcionListener etc.)
+ * Action Listener komplettieren
+ */
+
+
 package GUI;
 
 import java.awt.BorderLayout;
@@ -26,7 +34,7 @@ public class Album extends JFrame implements ActionListener{
 	
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben1, bEinkleben2, bEinkleben3, bEinkleben4, bName1, bName2, bName3, bName4;
+	private JButton bNaechsteSeite, bVorherigeSeite,bName1, bName2, bName3, bName4;
 	private JLabel lblBild1, lblBild2, lblBild3, lblBild4,lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz, lblStatistik5, lblStatistik6, lblStatistik7, lblStatistik8;
 	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats, pStatistik1, pStatistik2, pStatistik3, pStatistik4;
 
@@ -82,16 +90,7 @@ public class Album extends JFrame implements ActionListener{
 		bName3 = new JButton("Manuel Akanji");
 		bName4 = new JButton("Haris Seferovic");
 		
-		//Einkleben Button definieren
-		//Einkleben1
-		bEinkleben1 = new JButton("Einkleben");
-		bEinkleben1.setVisible(true);
-		bEinkleben1.addActionListener(this);
-		
-		bEinkleben2 = new JButton("Einkleben");
-		bEinkleben3 = new JButton("Einkleben");
-		bEinkleben4 = new JButton("Einkleben");
-		
+	
 		pCHAlbum = new JPanel();
 		pTopCHAlbum = new JPanel();
 		pSpielerAngaben = new JPanel();
