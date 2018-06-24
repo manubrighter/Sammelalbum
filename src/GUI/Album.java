@@ -99,6 +99,8 @@ public class Album extends JFrame implements ActionListener{
 		
 		bNaechsteSeite.setBackground(myblue);
 		bVorherigeSeite.setBackground(myblue);
+		bNaechsteSeite.setFont(Font20);
+		bVorherigeSeite.setFont(Font20);
 		
 		
 		pSpielerAngaben.setLayout(new BorderLayout());
@@ -289,19 +291,9 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		//Add Button ActionListener
-		bNaechsteSeite.addActionListener(this);	
-		bREFVorherigeSeite.addActionListener(this);	
-		
 		//Album visible, REF invisible
-		pCHAlbum.setVisible(true);
-		pREFAlbum.setVisible(false);
-		
-		bVorherigeSeite.setEnabled(false);
-		bNaechsteSeite.setEnabled(true);
-		
-		bREFVorherigeSeite.setEnabled(true);
-		bREFNaechsteSeite.setEnabled(false);
+		pCHAlbum.setVisible(false);
+		pREFAlbum.setVisible(true);
 		
 		
 		this.setVisible(true); 
@@ -311,16 +303,7 @@ this.add(pREFAlbum);
 	
 	
 	@Override
-	public void actionPerformed(ActionEvent ae) {
-		if(ae.getSource() == this.bNaechsteSeite){
-			pCHAlbum.setVisible(false);
-			pREFAlbum.setVisible(true);
-			
-		} else if(ae.getSource() == this.bREFVorherigeSeite){
-			pCHAlbum.setVisible(true);
-			pREFAlbum.setVisible(false);
-		}
-		
+	public void actionPerformed(ActionEvent arg0) {
 		
 		
 	}
