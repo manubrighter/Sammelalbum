@@ -143,6 +143,8 @@ public class Album extends JFrame implements ActionListener{
 		lblBild3.setVerticalAlignment(SwingConstants.CENTER);
 		lblBild4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBild4.setVerticalAlignment(SwingConstants.CENTER);
+		lblBild1.setIcon(new ImageIcon(".\\IMG\\JohanDjourou.jpg"));
+
 		
 		
 		pSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
