@@ -84,7 +84,7 @@ public class Album extends JFrame implements ActionListener{
 		pSpielerBilder = new JPanel();
 		pSpielerStats = new JPanel(); 
 		
-		pCHAlbum.setBounds(0, 0, 1150, 650);
+		pCHAlbum.setBounds(0, 0, 1150, 650); 
 
 		
 		
