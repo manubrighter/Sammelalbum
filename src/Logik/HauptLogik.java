@@ -1,5 +1,6 @@
  package Logik;
 
+import java.awt.Component;
 import java.awt.List;
 import java.util.ArrayList;
 
@@ -10,13 +11,16 @@ import Daten.Unparteiische;
 
 public class HauptLogik {
 	
+	ArrayList<String> MenschenListe = new ArrayList<>();
+	
+	
+	Spieler spieler = new Spieler();
+	Trainer trainer = new Trainer();
+	Unparteiische unparteiische = new Unparteiische();
+	
+	
 	public void Listenlogik(){
-		Spieler spieler = new Spieler();
-		Trainer trainer = new Trainer();
-		Unparteiische unparteiische = new Unparteiische();
-
-		ArrayList<String> MenschenListe = new ArrayList<>();
-		
+	
 		spieler.createSpieler(1, 25, 15);
 		MenschenListe.add(spieler.SpielerString());
 		spieler.createSpieler(2, 19, 8);
@@ -36,9 +40,13 @@ public class HauptLogik {
 		unparteiische.createUnparteiische(8, 28, 187);
 		MenschenListe.add(unparteiische.UnparteiischeString());
 		
-		for(Object objekt : MenschenListe){
-			System.out.println(objekt);
-		}
+	/*	for (int i = 0; i < MenschenListe.size(); i++) {
+			System.out.println(MenschenListe.get(i));
+		}*/
+	}
+	
+	public String getMenschenListe(int ID) {
+		return MenschenListe.get(ID);
 	}
 	
 	

@@ -16,17 +16,24 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
+import Logik.HauptLogik;
+
 public class Album extends JFrame implements ActionListener{
+	
+	
+	//Objekte
+	HauptLogik hauptlogik = new HauptLogik();
 	
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben1, bEinkleben2, bEinkleben3, bEinkleben4;
-	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;
-	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
+	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz, lblStatistik5, lblStatistik6, lblStatistik7, lblStatistik8;
+	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats, pStatistik1, pStatistik2, pStatistik3, pStatistik4;
 
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
+	private Font Font15 = new Font("Arial", Font.BOLD, 15);
 	
 	private Color mygreen = new Color(161, 249, 78);
 	private Color myred = new Color (255, 80, 80);
@@ -49,6 +56,9 @@ public class Album extends JFrame implements ActionListener{
 		this.setResizable(false); //Fenstergrösse ist nicht veränderbar
 		this.setSize(1150, 650); //Grösse des Fensters definieren
 		this.setLocation(530, 350); //Ort des Fensters definieren
+		
+		//Spieler erstellen
+		hauptlogik.Listenlogik();
 		 
 		//Bausteine definieren
 		lblBild1 = new JLabel();
@@ -64,6 +74,10 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik2 = new JLabel("Statistik");
 		lblStatistik3 = new JLabel("Statistik");
 		lblStatistik4 = new JLabel("Statistik");
+		lblStatistik5 = new JLabel(hauptlogik.getMenschenListe(0));
+		lblStatistik6 = new JLabel(hauptlogik.getMenschenListe(1));
+		lblStatistik7 = new JLabel(hauptlogik.getMenschenListe(2));
+		lblStatistik8 = new JLabel(hauptlogik.getMenschenListe(3));
 		bNaechsteSeite = new JButton("Nächste Seite");
 		bVorherigeSeite = new JButton("Vorherige Seite");
 		
@@ -83,6 +97,10 @@ public class Album extends JFrame implements ActionListener{
 		pSpielerNamen = new JPanel();
 		pSpielerBilder = new JPanel();
 		pSpielerStats = new JPanel(); 
+		pStatistik1 = new JPanel();
+		pStatistik2 = new JPanel();
+		pStatistik3 = new JPanel();
+		pStatistik4 = new JPanel();
 		
 		pCHAlbum.setBounds(0, 0, 1150, 650); 
 
@@ -161,16 +179,39 @@ public class Album extends JFrame implements ActionListener{
 
 			
 		pSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
-		pSpielerStats.add(lblStatistik1);
-		pSpielerStats.add(lblStatistik2);
-		pSpielerStats.add(lblStatistik3);
-		pSpielerStats.add(lblStatistik4);
+		pSpielerStats.add(pStatistik1);
+		pSpielerStats.add(pStatistik2);
+		pSpielerStats.add(pStatistik3);
+		pSpielerStats.add(pStatistik4);
+		
+		pSpielerStats.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		pSpielerStats.setBackground(Color.GRAY);
+		
+		pStatistik1.add(lblStatistik1);
+		pStatistik1.add(lblStatistik5);
+		pStatistik1.setBackground(Color.GRAY);
+		
+		pStatistik2.add(lblStatistik2);
+		pStatistik2.add(lblStatistik6);
+		pStatistik2.setBackground(Color.GRAY);
+		
+		pStatistik3.add(lblStatistik3);
+		pStatistik3.add(lblStatistik7);
+		pStatistik3.setBackground(Color.GRAY);
+		
+		pStatistik4.add(lblStatistik4);
+		pStatistik4.add(lblStatistik8);
+		pStatistik4.setBackground(Color.GRAY);
+		
 		lblStatistik1.setFont(Font20);
 		lblStatistik2.setFont(Font20);
 		lblStatistik3.setFont(Font20);
 		lblStatistik4.setFont(Font20);
-		pSpielerStats.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
-		pSpielerStats.setBackground(Color.GRAY);
+		lblStatistik5.setFont(Font15);
+		lblStatistik6.setFont(Font15);
+		lblStatistik7.setFont(Font15);
+		lblStatistik8.setFont(Font15);
+
 		lblStatistik1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStatistik1.setVerticalAlignment(SwingConstants.CENTER);
 		lblStatistik2.setHorizontalAlignment(SwingConstants.CENTER);
@@ -179,6 +220,16 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik3.setVerticalAlignment(SwingConstants.CENTER);
 		lblStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStatistik4.setVerticalAlignment(SwingConstants.CENTER);
+		lblStatistik5.setHorizontalAlignment(SwingConstants.CENTER);
+		lblStatistik5.setVerticalAlignment(SwingConstants.CENTER);
+		lblStatistik6.setHorizontalAlignment(SwingConstants.CENTER);
+		lblStatistik6.setVerticalAlignment(SwingConstants.CENTER);
+		lblStatistik7.setHorizontalAlignment(SwingConstants.CENTER);
+		lblStatistik7.setVerticalAlignment(SwingConstants.CENTER);
+		lblStatistik8.setHorizontalAlignment(SwingConstants.CENTER);
+		lblStatistik8.setVerticalAlignment(SwingConstants.CENTER);
+		
+
 		
 		
 		
@@ -189,7 +240,7 @@ public class Album extends JFrame implements ActionListener{
 		lblREFBild2 = new JLabel();
 		lblREFBild3 = new JLabel();
 		lblREFBild4 = new JLabel();
-		lblRefree= new JLabel("Unparteiische");
+		lblRefree = new JLabel("Unparteiische");
 		lblREFName1 = new JLabel("Fahad Al-Mirdasi");
 		lblREFName2 = new JLabel("Alireza Faghani");
 		lblREFName3 = new JLabel("Ryuji Sato");
@@ -322,6 +373,15 @@ this.add(pREFAlbum);
 		
 		this.setVisible(true); 
 		
+		//stats
+		lblStatistik1.setVisible(true);
+		lblStatistik5.setVisible(false);
+		lblStatistik2.setVisible(true);
+		lblStatistik6.setVisible(false);
+		lblStatistik3.setVisible(true);
+		lblStatistik7.setVisible(false);
+		lblStatistik4.setVisible(true);
+		lblStatistik8.setVisible(false);
 	}
 	
 	
@@ -348,6 +408,10 @@ this.add(pREFAlbum);
 			pSpielerBilder.add(lblBild3);
 			pSpielerBilder.add(lblBild4);	
 			pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+			
+			
+			lblStatistik1.setVisible(false);
+			lblStatistik5.setVisible(true);
 		}
 	}
 		
