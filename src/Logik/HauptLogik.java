@@ -1,34 +1,53 @@
 package Logik;
 
 import java.awt.List;
+import java.util.ArrayList;
 
+import Daten.Mensch;
 import Daten.Spieler;
 import Daten.Trainer;
 import Daten.Unparteiische;
 
 public class HauptLogik {
-		
-	public static void main(String[] args) {
-		//Spieler hinzufügen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	public void Listenlogik(){
 		Spieler spieler = new Spieler();
-		spieler.createSpieler(1, 25, 15);
-		spieler.createSpieler(2, 19, 7);
-		spieler.createSpieler(3, 13, 13);
-		
-		//Trainer hinzufügen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		Trainer trainer = new Trainer();
-		trainer.createTrainer(4, 87, "Cheftrainer");
-		
-		//Unparteiische hinzufügen~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		Unparteiische unparteiische = new Unparteiische();
-		unparteiische.createUnparteiische(5, 36, 134);
-		unparteiische.createUnparteiische(6, 28, 54);
-		unparteiische.createUnparteiische(7, 32, 87);
-		unparteiische.createUnparteiische(8, 28, 187);
+
+		ArrayList<String> MenschenListe = new ArrayList<>();
 		
-		/*
-		List<Mensch> MenschenListe = new ArrayList<>();
-		*/
+		spieler.createSpieler(1, 25, 15);
+		MenschenListe.add(spieler.SpielerString());
+		spieler.createSpieler(2, 19, 8);
+		MenschenListe.add(spieler.SpielerString());
+		spieler.createSpieler(3, 23, 13);
+		MenschenListe.add(spieler.SpielerString());
+		
+		trainer.createTrainer(4, 87, "Cheftrainer");
+		MenschenListe.add(trainer.TrainerString());
+		
+		unparteiische.createUnparteiische(5, 36, 134);
+		MenschenListe.add(unparteiische.UnparteiischeString());
+		unparteiische.createUnparteiische(6, 28, 54);
+		MenschenListe.add(unparteiische.UnparteiischeString());
+		unparteiische.createUnparteiische(7, 32, 87);
+		MenschenListe.add(unparteiische.UnparteiischeString());
+		unparteiische.createUnparteiische(8, 28, 187);
+		MenschenListe.add(unparteiische.UnparteiischeString());
+		
+		for(Object mensch : MenschenListe){
+			System.out.println(mensch);
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		HauptLogik hl = new HauptLogik();
+		hl.Listenlogik();
+
+
 	}
 
 	
