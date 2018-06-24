@@ -26,8 +26,8 @@ public class Album extends JFrame implements ActionListener{
 	
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben1, bEinkleben2, bEinkleben3, bEinkleben4;
-	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz, lblStatistik5, lblStatistik6, lblStatistik7, lblStatistik8;
+	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben1, bEinkleben2, bEinkleben3, bEinkleben4, bName1, bName2, bName3, bName4;
+	private JLabel lblBild1, lblBild2, lblBild3, lblBild4,lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz, lblStatistik5, lblStatistik6, lblStatistik7, lblStatistik8;
 	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats, pStatistik1, pStatistik2, pStatistik3, pStatistik4;
 
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
@@ -66,10 +66,7 @@ public class Album extends JFrame implements ActionListener{
 		lblBild3 = new JLabel();
 		lblBild4 = new JLabel();
 		lblSchweiz= new JLabel("Schweiz");
-		lblName1 = new JLabel("Johan Djourou");
-		lblName2 = new JLabel("Granit Xhaka");
-		lblName3 = new JLabel("Manuel Akanji");
-		lblName4 = new JLabel("Haris Seferovic");
+
 		lblStatistik1 = new JLabel("Statistik");
 		lblStatistik2 = new JLabel("Statistik");
 		lblStatistik3 = new JLabel("Statistik");
@@ -80,6 +77,10 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik8 = new JLabel(hauptlogik.getMenschenListe(3));
 		bNaechsteSeite = new JButton("Nächste Seite");
 		bVorherigeSeite = new JButton("Vorherige Seite");
+		bName1 = new JButton("Johan Djourou");
+		bName2 = new JButton("Granit Xhaka");
+		bName3 = new JButton("Manuel Akanji");
+		bName4 = new JButton("Haris Seferovic");
 		
 		//Einkleben Button definieren
 		//Einkleben1
@@ -137,32 +138,32 @@ public class Album extends JFrame implements ActionListener{
 		pSpielerAngaben.add(pSpielerStats, BorderLayout.SOUTH);
 		
 		pSpielerNamen.setBackground(myred);
-		pSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
-		pSpielerNamen.add(lblName1);
-		pSpielerNamen.add(lblName2);
-		pSpielerNamen.add(lblName3);
-		pSpielerNamen.add(lblName4);
-		lblName1.setFont(Font20);
-		lblName2.setFont(Font20);
-		lblName3.setFont(Font20);
-		lblName4.setFont(Font20);
+		pSpielerNamen.setLayout(new GridLayout(1, 4, 10, 10));
+		pSpielerNamen.add(bName1);
+		pSpielerNamen.add(bName2);
+		pSpielerNamen.add(bName3);
+		pSpielerNamen.add(bName4);
+		bName1.setFont(Font20);
+		bName2.setFont(Font20);
+		bName3.setFont(Font20);
+		bName4.setFont(Font20);
 		pSpielerNamen.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
-		lblName1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblName1.setVerticalAlignment(SwingConstants.CENTER);
-		lblName2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblName2.setVerticalAlignment(SwingConstants.CENTER);
-		lblName3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblName3.setVerticalAlignment(SwingConstants.CENTER);
-		lblName4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblName4.setVerticalAlignment(SwingConstants.CENTER);
+		bName1.setHorizontalAlignment(SwingConstants.CENTER);
+		bName1.setVerticalAlignment(SwingConstants.CENTER);
+		bName2.setHorizontalAlignment(SwingConstants.CENTER);
+		bName2.setVerticalAlignment(SwingConstants.CENTER);
+		bName3.setHorizontalAlignment(SwingConstants.CENTER);
+		bName3.setVerticalAlignment(SwingConstants.CENTER);
+		bName4.setHorizontalAlignment(SwingConstants.CENTER);
+		bName4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////
 		pSpielerBilder.setLayout(new GridLayout(1, 4, 10, 10));
-		pSpielerBilder.add(bEinkleben1);
-		pSpielerBilder.add(bEinkleben2);
-		pSpielerBilder.add(bEinkleben3);
-		pSpielerBilder.add(bEinkleben4);
-		
+		pSpielerBilder.add(lblBild1);
+		pSpielerBilder.add(lblBild2);
+		pSpielerBilder.add(lblBild3);
+		pSpielerBilder.add(lblBild4);	
+		pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
@@ -175,7 +176,7 @@ public class Album extends JFrame implements ActionListener{
 		lblBild3.setVerticalAlignment(SwingConstants.CENTER);
 		lblBild4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBild4.setVerticalAlignment(SwingConstants.CENTER);
-		lblBild1.setIcon(new ImageIcon(".\\IMG\\JohanDjourou.jpg"));
+
 
 			
 		pSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
@@ -356,9 +357,13 @@ this.add(pREFAlbum);
 		lblREFStatistik4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblREFStatistik4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		//add to Actionlistener
+		//add Buttons to Actionlistener
 		bNaechsteSeite.addActionListener(this);
 		bREFVorherigeSeite.addActionListener(this);
+		bName1.addActionListener(this);
+		bName2.addActionListener(this);
+		bName3.addActionListener(this);
+		bName4.addActionListener(this);
 		
 		
 		//Album visible, REF invisible
@@ -394,22 +399,23 @@ this.add(pREFAlbum);
 			pCHAlbum.setVisible(false);
 			pREFAlbum.setVisible(true);
 			
-		} else if(ae.getSource() == this.bREFVorherigeSeite){
+		} if(ae.getSource() == this.bREFVorherigeSeite){
 			pCHAlbum.setVisible(true);
 			pREFAlbum.setVisible(false);
 		}
 		
 		
 		
-		if(ae.getSource() ==this.bEinkleben1)
+		if(ae.getSource() ==this.bName1)
 		{
-			pSpielerBilder.add(lblBild1);
-			pSpielerBilder.add(lblBild2);
-			pSpielerBilder.add(lblBild3);
-			pSpielerBilder.add(lblBild4);	
-			pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+			//pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 			
 			
+			
+			//Bild wird angezeigt
+			lblBild1.setIcon(new ImageIcon(".\\IMG\\JohanDjourou.jpg"));
+			
+			//Statistik wird angezeigt
 			lblStatistik1.setVisible(false);
 			lblStatistik5.setVisible(true);
 		}
