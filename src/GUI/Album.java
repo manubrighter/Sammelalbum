@@ -20,7 +20,7 @@ public class Album extends JFrame implements ActionListener{
 	
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben;
+	private JButton bNaechsteSeite, bVorherigeSeite, bEinkleben1, bEinkleben2, bEinkleben3, bEinkleben4;
 	private JLabel lblBild1, lblBild2, lblBild3, lblBild4, lblName1, lblName2, lblName3, lblName4, lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz;
 	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats;
 
@@ -66,6 +66,16 @@ public class Album extends JFrame implements ActionListener{
 		lblStatistik4 = new JLabel("Statistik");
 		bNaechsteSeite = new JButton("Nächste Seite");
 		bVorherigeSeite = new JButton("Vorherige Seite");
+		
+		//Einkleben Button definieren
+		//Einkleben1
+		bEinkleben1 = new JButton("Einkleben");
+		bEinkleben1.setVisible(true);
+		bEinkleben1.addActionListener(this);
+		
+		bEinkleben2 = new JButton("Einkleben");
+		bEinkleben3 = new JButton("Einkleben");
+		bEinkleben4 = new JButton("Einkleben");
 		
 		pCHAlbum = new JPanel();
 		pTopCHAlbum = new JPanel();
@@ -128,14 +138,16 @@ public class Album extends JFrame implements ActionListener{
 		lblName4.setHorizontalAlignment(SwingConstants.CENTER);
 		lblName4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		
+		//////////////////////////////////////////////////////////////////////////////////////////////////////
 		pSpielerBilder.setLayout(new GridLayout(1, 4, 10, 10));
-		pSpielerBilder.add(lblBild1);
-		pSpielerBilder.add(lblBild2);
-		pSpielerBilder.add(lblBild3);
-		pSpielerBilder.add(lblBild4);	
-		pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
+		pSpielerBilder.add(bEinkleben1);
+		pSpielerBilder.add(bEinkleben2);
+		pSpielerBilder.add(bEinkleben3);
+		pSpielerBilder.add(bEinkleben4);
+		
 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
 		pSpielerBilder.setBackground(myblue);
 		lblBild1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBild1.setVerticalAlignment(SwingConstants.CENTER);
@@ -224,6 +236,8 @@ this.add(pREFAlbum);
 		//Buttons Unparteiische Schrift setzen
 		bREFVorherigeSeite.setFont(Font20);
 		bREFNaechsteSeite.setFont(Font20);
+		bREFNaechsteSeite.setBackground(myblue);
+		bREFVorherigeSeite.setBackground(myblue);
 		
 		
 		
@@ -323,6 +337,17 @@ this.add(pREFAlbum);
 		} else if(ae.getSource() == this.bREFVorherigeSeite){
 			pCHAlbum.setVisible(true);
 			pREFAlbum.setVisible(false);
+		}
+		
+		
+		
+		if(ae.getSource() ==this.bEinkleben1)
+		{
+			pSpielerBilder.add(lblBild1);
+			pSpielerBilder.add(lblBild2);
+			pSpielerBilder.add(lblBild3);
+			pSpielerBilder.add(lblBild4);	
+			pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 		}
 	}
 		
