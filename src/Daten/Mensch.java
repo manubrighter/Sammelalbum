@@ -19,4 +19,8 @@ public class Mensch {
 		this.ID = ID;
 		this.Alter = Alter;
 	}
+	
+	public int getID() {
+		return ID;
+	}
 }

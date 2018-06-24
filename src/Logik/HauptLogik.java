@@ -36,8 +36,8 @@ public class HauptLogik {
 		unparteiische.createUnparteiische(8, 28, 187);
 		MenschenListe.add(unparteiische.UnparteiischeString());
 		
-		for(Object mensch : MenschenListe){
-			System.out.println(mensch);
+		for(Object objekt : MenschenListe){
+			System.out.println(objekt);
 		}
 	}
 	

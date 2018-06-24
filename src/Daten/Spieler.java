@@ -25,5 +25,5 @@ public class Spieler extends Mensch{
 		sbSpieler.append(this.anzSpiele);
 		return sbSpieler.toString();
 	}
-	
+
 }
