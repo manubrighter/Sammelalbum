@@ -1,5 +1,7 @@
 package Logik;
 
+import java.awt.List;
+
 import Daten.Spieler;
 import Daten.Trainer;
 import Daten.Unparteiische;
@@ -25,11 +27,8 @@ public class HauptLogik {
 		unparteiische.createUnparteiische(8, 28, 187);
 		
 		/*
-		List<Mensch> list = new ArrayList<Mensch>();
-		
-        for(Mensch m: list){
-            System.out.println(m);
-        }*/
+		List<Mensch> MenschenListe = new ArrayList<>();
+		*/
 	}
 
 	
