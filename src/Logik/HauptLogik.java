@@ -68,9 +68,4 @@ public class HauptLogik implements HauptlogikInterface{
 		return BilderListe.get(ID);
 	}
 	
-	
-	public static void main(String[] args) {
-		HauptLogik hb = new HauptLogik();
-		hb.BildListenLogik();	
-	}
 }

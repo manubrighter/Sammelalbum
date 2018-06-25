@@ -523,10 +523,7 @@ this.add(pREFAlbum);
 		}
 		
 
-
 	}
-		
-	
 
 	
 }
