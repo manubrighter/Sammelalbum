@@ -478,14 +478,14 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bName3)
 		{
-			lblBild3.setText("Bild von Manuel Akanj");
+			lblBild3.setIcon(new ImageIcon(".\\IMG\\ManuelAkanji.jpg"));
 			lblStatistik3.setVisible(false);
 			lblStatistik7.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bName4)
 		{
-			lblBild4.setText("Bild von Vladimir Petkovic");
+			lblBild1.setIcon(new ImageIcon(".\\IMG\\VladimirPetkovic.jpg"));
 			lblStatistik4.setVisible(false);
 			lblStatistik8.setVisible(true);
 		}
