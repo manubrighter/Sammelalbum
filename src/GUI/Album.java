@@ -207,10 +207,10 @@ public class Album extends JFrame implements ActionListener{
 		pStatistik4.add(lblStatistik8);
 		pStatistik4.setBackground(Color.GRAY);
 		
-		lblStatistik1.setFont(Font20);
-		lblStatistik2.setFont(Font20);
-		lblStatistik3.setFont(Font20);
-		lblStatistik4.setFont(Font20);
+		lblStatistik1.setFont(Font15);
+		lblStatistik2.setFont(Font15);
+		lblStatistik3.setFont(Font15);
+		lblStatistik4.setFont(Font15);
 		lblStatistik5.setFont(Font15);
 		lblStatistik6.setFont(Font15);
 		lblStatistik7.setFont(Font15);
@@ -375,10 +375,10 @@ this.add(pREFAlbum);
 		pREFStatistik4.setBackground(Color.GRAY);
 			
 		
-		lblREFStatistik1.setFont(Font20);
-		lblREFStatistik2.setFont(Font20);
-		lblREFStatistik3.setFont(Font20);
-		lblREFStatistik4.setFont(Font20);
+		lblREFStatistik1.setFont(Font15);
+		lblREFStatistik2.setFont(Font15);
+		lblREFStatistik3.setFont(Font15);
+		lblREFStatistik4.setFont(Font15);
 		lblREFStatistik5.setFont(Font15);
 		lblREFStatistik6.setFont(Font15);
 		lblREFStatistik7.setFont(Font15);
