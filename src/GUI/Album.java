@@ -495,7 +495,7 @@ this.add(pREFAlbum);
 		if(ae.getSource() ==this.bREFName1)
 		{
 			//Bild wird angezeigt
-			lblREFBild1.setText("Bild von Fahad Al-Mirdasi");
+			lblREFBild1.setText("Bild von Fahad Al-Mirdasi"); 
 			
 			//Statistik wird angezeigt
 			lblREFStatistik1.setVisible(false);
