@@ -418,16 +418,22 @@ this.add(pREFAlbum);
 		if(ae.getSource() ==this.bName2)
 		{
 			lblBild2.setText("Bild von Granit Xhaka");
+			lblStatistik2.setVisible(false);
+			lblStatistik6.setVisible(true);
 		}
 		
 		if(ae.getSource() ==this.bName3)
 		{
 			lblBild3.setText("Bild von Manuel Akanj");
+			lblStatistik3.setVisible(false);
+			lblStatistik7.setVisible(true);
 		}
 		
 		if(ae.getSource() ==this.bName4)
 		{
 			lblBild4.setText("Bild von Vladimir Petkovic");
+			lblStatistik4.setVisible(false);
+			lblStatistik8.setVisible(true);
 		}
 	}
 		
