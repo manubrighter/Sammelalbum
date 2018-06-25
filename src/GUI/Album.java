@@ -34,7 +34,7 @@ public class Album extends JFrame implements ActionListener{
 	
 	
 	//Variablen initialisieren/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	private JButton bNaechsteSeite, bVorherigeSeite,bName1, bName2, bName3, bName4;
+	private JButton bNaechsteSeite, bVorherigeSeite, bName1, bName2, bName3, bName4;
 	private JLabel lblBild1, lblBild2, lblBild3, lblBild4,lblStatistik1, lblStatistik2, lblStatistik3, lblStatistik4, lblSchweiz, lblStatistik5, lblStatistik6, lblStatistik7, lblStatistik8;
 	private JPanel pCHAlbum, pTopCHAlbum, pSpielerAngaben, pSpielerNamen, pSpielerBilder, pSpielerStats, pStatistik1, pStatistik2, pStatistik3, pStatistik4;
 
@@ -50,7 +50,11 @@ public class Album extends JFrame implements ActionListener{
 	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 	
 	private JButton bREFNaechsteSeite, bREFVorherigeSeite, bREFEinkleben, bREFName1, bREFName2, bREFName3, bREFName4;
+<<<<<<< HEAD
 	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblRefree;  
+=======
+	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblREFStatistik5, lblREFStatistik6, lblREFStatistik7, lblREFStatistik8, lblRefree;  
+>>>>>>> branch 'master' of https://github.com/manubrighter/Sammelalbum.git
 	private JPanel pREFAlbum, pREFTopCHAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
 	
 	
@@ -142,6 +146,10 @@ public class Album extends JFrame implements ActionListener{
 		pSpielerNamen.add(bName2);
 		pSpielerNamen.add(bName3);
 		pSpielerNamen.add(bName4);
+		bName1.setBackground(myblue);
+		bName2.setBackground(myblue);
+		bName3.setBackground(myblue);
+		bName4.setBackground(myblue);
 		bName1.setFont(Font20);
 		bName2.setFont(Font20);
 		bName3.setFont(Font20);
@@ -249,6 +257,10 @@ public class Album extends JFrame implements ActionListener{
 		lblREFStatistik2 = new JLabel("Statistik");
 		lblREFStatistik3 = new JLabel("Statistik");
 		lblREFStatistik4 = new JLabel("Statistik");
+		lblREFStatistik5 = new JLabel(hauptlogik.getMenschenListe(4));
+		lblREFStatistik6 = new JLabel(hauptlogik.getMenschenListe(5));
+		lblREFStatistik7 = new JLabel(hauptlogik.getMenschenListe(6));
+		lblREFStatistik8 = new JLabel(hauptlogik.getMenschenListe(7));
 		bREFNaechsteSeite = new JButton("Nächste Seite");
 		bREFVorherigeSeite = new JButton("Vorherige Seite");
 		
@@ -298,11 +310,23 @@ this.add(pREFAlbum);
 		pREFSpielerAngaben.add(pREFSpielerStats, BorderLayout.SOUTH);
 		
 		pREFSpielerNamen.setBackground(myred);
+<<<<<<< HEAD
 		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 10, 10));
 		pREFSpielerNamen.add(bREFName1);
 		pREFSpielerNamen.add(bREFName2);
 		pREFSpielerNamen.add(bREFName3);
 		pREFSpielerNamen.add(bREFName4);
+=======
+		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
+		pREFSpielerNamen.add(bREFName1);
+		pREFSpielerNamen.add(bREFName2);
+		pREFSpielerNamen.add(bREFName3);
+		pREFSpielerNamen.add(bREFName4);
+		bREFName1.setBackground(myblue);
+		bREFName2.setBackground(myblue);
+		bREFName3.setBackground(myblue);
+		bREFName4.setBackground(myblue);
+>>>>>>> branch 'master' of https://github.com/manubrighter/Sammelalbum.git
 		bREFName1.setFont(Font20);
 		bREFName2.setFont(Font20);
 		bREFName3.setFont(Font20);
@@ -381,7 +405,7 @@ this.add(pREFAlbum);
 		
 		this.setVisible(true); 
 		
-		//stats
+		//stats CH
 		lblStatistik1.setVisible(true);
 		lblStatistik5.setVisible(false);
 		lblStatistik2.setVisible(true);
@@ -390,6 +414,16 @@ this.add(pREFAlbum);
 		lblStatistik7.setVisible(false);
 		lblStatistik4.setVisible(true);
 		lblStatistik8.setVisible(false);
+		
+		//stats REF
+		lblREFStatistik1.setVisible(true);
+		lblREFStatistik5.setVisible(false);
+		lblREFStatistik2.setVisible(true);
+		lblREFStatistik6.setVisible(false);
+		lblREFStatistik3.setVisible(true);
+		lblREFStatistik7.setVisible(false);
+		lblREFStatistik4.setVisible(true);
+		lblREFStatistik8.setVisible(false);
 	}
 	
 	
@@ -402,7 +436,9 @@ this.add(pREFAlbum);
 			pCHAlbum.setVisible(false);
 			pREFAlbum.setVisible(true);
 			
-		} if(ae.getSource() == this.bREFVorherigeSeite){
+		} 
+		
+		else if(ae.getSource() == this.bREFVorherigeSeite){
 			pCHAlbum.setVisible(true);
 			pREFAlbum.setVisible(false);
 		}
@@ -419,27 +455,28 @@ this.add(pREFAlbum);
 			lblStatistik5.setVisible(true);
 		}
 		
-		if(ae.getSource() ==this.bName2)
+		else if(ae.getSource() ==this.bName2)
 		{
 			lblBild2.setText("Bild von Granit Xhaka");
 			lblStatistik2.setVisible(false);
 			lblStatistik6.setVisible(true);
 		}
 		
-		if(ae.getSource() ==this.bName3)
+		else if(ae.getSource() ==this.bName3)
 		{
 			lblBild3.setText("Bild von Manuel Akanj");
 			lblStatistik3.setVisible(false);
 			lblStatistik7.setVisible(true);
 		}
 		
-		if(ae.getSource() ==this.bName4)
+		else if(ae.getSource() ==this.bName4)
 		{
 			lblBild4.setText("Bild von Vladimir Petkovic");
 			lblStatistik4.setVisible(false);
 			lblStatistik8.setVisible(true);
 		}
 		
+<<<<<<< HEAD
 		//Einkleben Unparteiische
 		
 		if (ae.getSource()==this.bREFName1)
@@ -463,6 +500,40 @@ this.add(pREFAlbum);
 			lblREFBild4.setText("Bild von Nawaf Shukralla"); 
 		}
 	
+=======
+		
+		
+		if(ae.getSource() ==this.bREFName1)
+		{
+			//Bild wird angezeigt
+			lblREFBild1.setText("Bild von Fahad Al-Mirdasi");
+			
+			//Statistik wird angezeigt
+			lblREFStatistik1.setVisible(false);
+			lblREFStatistik5.setVisible(true);
+		}
+		
+		else if(ae.getSource() ==this.bREFName2)
+		{
+			lblREFBild2.setText("Bild von Alireza Faghani");
+			lblREFStatistik2.setVisible(false);
+			lblREFStatistik6.setVisible(true);
+		}
+		
+		else if(ae.getSource() ==this.bREFName3)
+		{
+			lblREFBild3.setText("Bild von Ryuji Sato");
+			lblREFStatistik3.setVisible(false);
+			lblREFStatistik7.setVisible(true);
+		}
+		
+		else if(ae.getSource() ==this.bREFName4)
+		{
+			lblREFBild4.setText("Bild von Nawaf Shukralla");
+			lblREFStatistik4.setVisible(false);
+			lblREFStatistik8.setVisible(true);
+		}
+>>>>>>> branch 'master' of https://github.com/manubrighter/Sammelalbum.git
 	}
 		
 	
