@@ -522,6 +522,8 @@ this.add(pREFAlbum);
 			lblREFStatistik4.setVisible(false);
 			lblREFStatistik8.setVisible(true);
 		}
+		
+
 
 	}
 		
