@@ -45,25 +45,34 @@ public class HauptLogik implements HauptlogikInterface{
 	}
 	
 		
-		public void BildListenLogik(){
-			
-			BilderListe.add(".\\IMG\\JohanDjourou.jpg");
-			BilderListe.add(".\\IMG\\GranitXhaka.jpg");
-			BilderListe.add(".\\IMG\\ManuelAkanji.jpg");
-			
-			BilderListe.add(".\\IMG\\VladimirPetkovic.jpg");
-			
-			BilderListe.add(".\\IMG\\Fahad Al-Mirdasi.jpg");
-			BilderListe.add(".\\IMG\\AlirezaFaghani.jpg");
-			BilderListe.add(".\\IMG\\RyujiSato.jpg");
-			BilderListe.add(".\\IMG\\NawafShukralla.jpeg");
+	public void BildListenLogik(){
+		
+		//Spieler
+		BilderListe.add(".\\IMG\\JohanDjourou.jpg");
+		BilderListe.add(".\\IMG\\GranitXhaka.jpg");
+		BilderListe.add(".\\IMG\\ManuelAkanji.jpg");
+		
+		//Trainer
+		BilderListe.add(".\\IMG\\VladimirPetkovic.jpg");
+		
+		//Unparteiische
+		BilderListe.add(".\\IMG\\Fahad Al-Mirdasi.jpg");
+		BilderListe.add(".\\IMG\\AlirezaFaghani.jpg");
+		BilderListe.add(".\\IMG\\RyujiSato.jpg");
+		BilderListe.add(".\\IMG\\NawafShukralla.jpeg");
 			
 	}
 	
+	/**
+	 * gibt den gewünschten Eintrag der MenschenListe zurück
+	 */
 	public String getMenschenListe(int ID) {
 		return MenschenListe.get(ID);
 	}
 	
+	/**
+	 * gibt den gewünschten Eintrag der BilderListe zurück
+	 */
 	public String getBildListe(int ID) {
 		return BilderListe.get(ID);
 	}

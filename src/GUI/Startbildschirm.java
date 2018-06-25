@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 package GUI;
 
 import java.awt.BorderLayout;
@@ -24,30 +16,30 @@ import javax.swing.SwingConstants;
 public class Startbildschirm extends JFrame implements ActionListener {
 	
 	
-	//Erstellung der GUI Elemente
+	//Initialisierung der GUI Variablen
 	private JButton bAlbumAnsehen;
 	private JButton bPaeckchenOeffnen;  
 	private JButton bProgrammBeenden;
 	private JLabel lblFussballbilderSammelalbum;
-	private JLabel lblNeustarten;
+	private JLabel lblCopyright;
 	private JPanel pStartbildschirm;
 	
-	//Erstellung Schriften
+	//Erstellung der Schriften Objekte
 	private Font Font50 = new Font("Arial", Font.BOLD, 50);
 	private Font Font40 = new Font("Arial", Font.BOLD, 40);
 	private Font Font30 = new Font("Arial", Font.BOLD, 30);
 	private Font Font20 = new Font("Arial", Font.BOLD, 20);
 	
-	//Erstellung Farben
+	//Erstellung der Farben Objekte
 	private Color myblue = new Color(66, 203, 244);
 	private Color myred = new Color(249, 79, 105);
 	private Color mygreen = new Color(161, 249, 78); 
 	
 	public Startbildschirm()
 	{
-		//Anzeige Fenster erstellen (provisorische Werte) und sichtbar machen
+		//Anzeige Fenster erstellen sichtbar machen
 		this.setLayout(null);
-		this.setResizable(false); //Fenstergrösse ist nicht verÃ¤nderbar
+		this.setResizable(false); //Fenstergrösse ist nicht veraenderbar
 		this.setSize(1150, 650); //Grösse des Fensters definieren
 		this.setLocation(400, 200); //Ort des Fensters definieren
 		this.setVisible(true);
@@ -68,13 +60,13 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		bPaeckchenOeffnen.setVisible(true);
 		bPaeckchenOeffnen.addActionListener(this);
 
-		lblNeustarten = new JLabel ("© by Manuel Heller and Jimoh Meyer");
-		lblNeustarten.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNeustarten.setVerticalAlignment(SwingConstants.CENTER);
-		lblNeustarten.setFont(Font30);
-		lblNeustarten.setOpaque(true);;
-		lblNeustarten.setBackground(mygreen);
-		lblNeustarten.setVisible(true);
+		lblCopyright = new JLabel ("© by Manuel Heller and Jimoh Meyer");
+		lblCopyright.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCopyright.setVerticalAlignment(SwingConstants.CENTER);
+		lblCopyright.setFont(Font30);
+		lblCopyright.setOpaque(true);;
+		lblCopyright.setBackground(mygreen);
+		lblCopyright.setVisible(true);
 		
 		bProgrammBeenden = new JButton ("Beenden");
 		bProgrammBeenden.setFont(Font30);
@@ -103,7 +95,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		pStartbildschirm.add(bAlbumAnsehen, BorderLayout.WEST);
 		pStartbildschirm.add(bPaeckchenOeffnen, BorderLayout.EAST);
 		pStartbildschirm.add(bProgrammBeenden, BorderLayout.SOUTH);
-		pStartbildschirm.add(lblNeustarten, BorderLayout.NORTH);
+		pStartbildschirm.add(lblCopyright, BorderLayout.NORTH);
 		pStartbildschirm.add(lblFussballbilderSammelalbum, BorderLayout.CENTER);
 		pStartbildschirm.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
 		
@@ -112,29 +104,28 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	
 
 	
-
+	/**
+	 * Alle funktionen des Startbildschirms
+	 */
 	@Override
 	public void actionPerformed(ActionEvent ae) {
 		
+		//weiterleitung zur Album Klasse
 		if (ae.getSource() == bAlbumAnsehen)
 		{
 			Album album = new Album();
 		}
 		
-		if (ae.getSource() == bPaeckchenOeffnen)
+		//weiterleitung zur PaeckchenOeffnen Klasse
+		else if (ae.getSource() == bPaeckchenOeffnen)
 		{
 			bPaeckchenOeffnen.setText("Funktion nicht einsatzbereit");
 		}
 		
-		if (ae.getSource() == lblNeustarten)
+		//beendet das Programm
+		else if (ae.getSource() == bProgrammBeenden)
 		{
-			//Reset Pictures
-			//Meldung "Neugestartet
-		}
-		
-		if (ae.getSource() == bProgrammBeenden)
-		{
-			System.exit(0); //beendet Programm
+			System.exit(0);
 		}
 		
 	}
