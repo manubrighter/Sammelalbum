@@ -49,8 +49,8 @@ public class Album extends JFrame implements ActionListener{
 	
 	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 	
-	private JButton bREFNaechsteSeite, bREFVorherigeSeite, bREFEinkleben;
-	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFName1, lblREFName2, lblREFName3, lblREFName4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblRefree;  
+	private JButton bREFNaechsteSeite, bREFVorherigeSeite, bREFEinkleben, bREFName1, bREFName2, bREFName3, bREFName4;
+	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblRefree;  
 	private JPanel pREFAlbum, pREFTopCHAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
 	
 	
@@ -241,10 +241,10 @@ public class Album extends JFrame implements ActionListener{
 		lblREFBild3 = new JLabel();
 		lblREFBild4 = new JLabel();
 		lblRefree = new JLabel("Unparteiische");
-		lblREFName1 = new JLabel("Fahad Al-Mirdasi");
-		lblREFName2 = new JLabel("Alireza Faghani");
-		lblREFName3 = new JLabel("Ryuji Sato");
-		lblREFName4 = new JLabel("Nawaf Shukralla");
+		bREFName1 = new JButton("Fahad Al-Mirdasi");
+		bREFName2 = new JButton("Alireza Faghani");
+		bREFName3 = new JButton("Ryuji Sato");
+		bREFName4 = new JButton("Nawaf Shukralla");
 		lblREFStatistik1 = new JLabel("Statistik");
 		lblREFStatistik2 = new JLabel("Statistik");
 		lblREFStatistik3 = new JLabel("Statistik");
@@ -298,24 +298,24 @@ this.add(pREFAlbum);
 		pREFSpielerAngaben.add(pREFSpielerStats, BorderLayout.SOUTH);
 		
 		pREFSpielerNamen.setBackground(myred);
-		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
-		pREFSpielerNamen.add(lblREFName1);
-		pREFSpielerNamen.add(lblREFName2);
-		pREFSpielerNamen.add(lblREFName3);
-		pREFSpielerNamen.add(lblREFName4);
-		lblREFName1.setFont(Font20);
-		lblREFName2.setFont(Font20);
-		lblREFName3.setFont(Font20);
-		lblREFName4.setFont(Font20);
+		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 10, 10));
+		pREFSpielerNamen.add(bREFName1);
+		pREFSpielerNamen.add(bREFName2);
+		pREFSpielerNamen.add(bREFName3);
+		pREFSpielerNamen.add(bREFName4);
+		bREFName1.setFont(Font20);
+		bREFName2.setFont(Font20);
+		bREFName3.setFont(Font20);
+		bREFName4.setFont(Font20);
 		pREFSpielerNamen.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
-		lblREFName1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblREFName1.setVerticalAlignment(SwingConstants.CENTER);
-		lblREFName2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblREFName2.setVerticalAlignment(SwingConstants.CENTER);
-		lblREFName3.setHorizontalAlignment(SwingConstants.CENTER);
-		lblREFName3.setVerticalAlignment(SwingConstants.CENTER);
-		lblREFName4.setHorizontalAlignment(SwingConstants.CENTER);
-		lblREFName4.setVerticalAlignment(SwingConstants.CENTER);
+		bREFName1.setHorizontalAlignment(SwingConstants.CENTER);
+		bREFName1.setVerticalAlignment(SwingConstants.CENTER);
+		bREFName2.setHorizontalAlignment(SwingConstants.CENTER);
+		bREFName2.setVerticalAlignment(SwingConstants.CENTER);
+		bREFName3.setHorizontalAlignment(SwingConstants.CENTER);
+		bREFName3.setVerticalAlignment(SwingConstants.CENTER);
+		bREFName4.setHorizontalAlignment(SwingConstants.CENTER);
+		bREFName4.setVerticalAlignment(SwingConstants.CENTER);
 		
 		
 		pREFSpielerBilder.setLayout(new GridLayout(1, 4, 10, 10));
@@ -363,6 +363,10 @@ this.add(pREFAlbum);
 		bName2.addActionListener(this);
 		bName3.addActionListener(this);
 		bName4.addActionListener(this);
+		bREFName1.addActionListener(this);
+		bREFName2.addActionListener(this);
+		bREFName3.addActionListener(this);
+		bREFName4.addActionListener(this);
 		
 		
 		//Album visible, REF invisible
@@ -435,6 +439,30 @@ this.add(pREFAlbum);
 			lblStatistik4.setVisible(false);
 			lblStatistik8.setVisible(true);
 		}
+		
+		//Einkleben Unparteiische
+		
+		if (ae.getSource()==this.bREFName1)
+		{
+			lblREFBild1.setText("Bild von Fahad Al Mirdasi");
+			lblREFStatistik1.setVisible(false);
+		}
+		
+		if (ae.getSource()==this.bREFName2)
+		{
+			lblREFBild2.setText("Bild von Alireza Faghani");
+		}
+		
+		if (ae.getSource()==this.bREFName3)
+		{
+			lblREFBild3.setText("Bild von Ryuji Sato");
+		}
+		
+		if (ae.getSource()==this.bREFName4)
+		{
+			lblREFBild4.setText("Bild von Nawaf Shukralla");
+		}
+	
 	}
 		
 	
