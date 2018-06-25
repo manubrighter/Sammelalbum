@@ -460,7 +460,7 @@ this.add(pREFAlbum);
 		
 		if (ae.getSource()==this.bREFName4)
 		{
-			lblREFBild4.setText("Bild von Nawaf Shukralla");
+			lblREFBild4.setText("Bild von Nawaf Shukralla"); 
 		}
 	
 	}
