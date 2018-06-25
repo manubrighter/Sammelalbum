@@ -66,7 +66,8 @@ public class Album extends JFrame implements ActionListener{
 		this.setLocation(530, 350); //Ort des Fensters definieren
 		
 		//Spieler erstellen
-		hauptlogik.Listenlogik();
+		hauptlogik.MenschListenLogik();
+		hauptlogik.BildListenLogik();
 		 
 		//Bausteine definieren
 		lblBild1 = new JLabel();
@@ -462,7 +463,7 @@ this.add(pREFAlbum);
 		if(ae.getSource() ==this.bName1)
 		{
 			//Bild wird angezeigt
-			lblBild1.setIcon(new ImageIcon(".\\IMG\\JohanDjourou.jpg"));
+			lblBild1.setIcon(new ImageIcon(hauptlogik.getBildListe(0)));
 			
 			//Statistik wird angezeigt
 			lblStatistik1.setVisible(false);
@@ -471,21 +472,21 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bName2)
 		{
-			lblBild2.setIcon(new ImageIcon(".\\IMG\\GranitXhaka.jpg"));
+			lblBild2.setIcon(new ImageIcon(hauptlogik.getBildListe(1)));
 			lblStatistik2.setVisible(false);
 			lblStatistik6.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bName3)
 		{
-			lblBild3.setIcon(new ImageIcon(".\\IMG\\ManuelAkanji.jpg"));
+			lblBild3.setIcon(new ImageIcon(hauptlogik.getBildListe(2)));
 			lblStatistik3.setVisible(false);
 			lblStatistik7.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bName4)
 		{
-			lblBild4.setIcon(new ImageIcon(".\\IMG\\VladimirPetkovic.jpg"));
+			lblBild4.setIcon(new ImageIcon(hauptlogik.getBildListe(3)));
 			lblStatistik4.setVisible(false);
 			lblStatistik8.setVisible(true);
 		}
@@ -495,7 +496,7 @@ this.add(pREFAlbum);
 		if(ae.getSource() ==this.bREFName1)
 		{
 			//Bild wird angezeigt
-			lblREFBild1.setIcon(new ImageIcon(".\\IMG\\Fahad Al-Mirdasi.jpg")); 
+			lblREFBild1.setIcon(new ImageIcon(hauptlogik.getBildListe(4))); 
 			
 			//Statistik wird angezeigt
 			lblREFStatistik1.setVisible(false);
@@ -504,21 +505,21 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bREFName2)
 		{
-			lblREFBild2.setIcon(new ImageIcon(".\\IMG\\AlirezaFaghani.jpg"));
+			lblREFBild2.setIcon(new ImageIcon(hauptlogik.getBildListe(5)));
 			lblREFStatistik2.setVisible(false);
 			lblREFStatistik6.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bREFName3)
 		{
-			lblREFBild3.setIcon(new ImageIcon(".\\IMG\\RyujiSato.jpg"));
+			lblREFBild3.setIcon(new ImageIcon(hauptlogik.getBildListe(6)));
 			lblREFStatistik3.setVisible(false);
 			lblREFStatistik7.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bREFName4)
 		{
-			lblREFBild4.setIcon(new ImageIcon(".\\IMG\\NawafShukralla.jpeg"));
+			lblREFBild4.setIcon(new ImageIcon(hauptlogik.getBildListe(7)));
 			lblREFStatistik4.setVisible(false);
 			lblREFStatistik8.setVisible(true);
 		}

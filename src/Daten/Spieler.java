@@ -6,18 +6,15 @@ public class Spieler extends Mensch{
 
 	private int anzSpiele;
 	
-	public void createSpieler(int ID, int Alter, int anzSpiele) {
-		super.createSpieler(ID, Alter, anzSpiele);
+	public void createSpieler(int Alter, int anzSpiele) {
+		super.createSpieler(Alter, anzSpiele);
 		this.anzSpiele = anzSpiele;
 	}
 	
 
 	public String SpielerString() {
 		StringBuilder sbSpieler = new StringBuilder();
-		/*
-		sbSpieler.append("ID: ");
-		sbSpieler.append(this.ID);
-		*/
+
 		sbSpieler.append("Alter: ");
 		sbSpieler.append(this.Alter);
 		

@@ -8,10 +8,12 @@ import Daten.Mensch;
 import Daten.Spieler;
 import Daten.Trainer;
 import Daten.Unparteiische;
+import GUI.Startbildschirm;
 
 public class HauptLogik {
 	
 	ArrayList<String> MenschenListe = new ArrayList<>();
+	ArrayList<String> BilderListe = new ArrayList<>();
 	
 	
 	Spieler spieler = new Spieler();
@@ -19,44 +21,56 @@ public class HauptLogik {
 	Unparteiische unparteiische = new Unparteiische();
 	
 	
-	public void Listenlogik(){
+	public void MenschListenLogik(){
 	
-		spieler.createSpieler(1, 25, 15);
+		spieler.createSpieler(25, 15);
 		MenschenListe.add(spieler.SpielerString());
-		spieler.createSpieler(2, 19, 8);
+		spieler.createSpieler(19, 8);
 		MenschenListe.add(spieler.SpielerString());
-		spieler.createSpieler(3, 23, 13);
+		spieler.createSpieler(23, 13);
 		MenschenListe.add(spieler.SpielerString());
 		
-		trainer.createTrainer(4, 87, "Cheftrainer");
+		trainer.createTrainer(87, "Cheftrainer");
 		MenschenListe.add(trainer.TrainerString());
 		
-		unparteiische.createUnparteiische(5, 36, 134);
+		unparteiische.createUnparteiische(36, 134);
 		MenschenListe.add(unparteiische.UnparteiischeString());
-		unparteiische.createUnparteiische(6, 28, 54);
+		unparteiische.createUnparteiische(28, 54);
 		MenschenListe.add(unparteiische.UnparteiischeString());
-		unparteiische.createUnparteiische(7, 32, 87);
+		unparteiische.createUnparteiische(32, 87);
 		MenschenListe.add(unparteiische.UnparteiischeString());
-		unparteiische.createUnparteiische(8, 28, 187);
+		unparteiische.createUnparteiische(28, 187);
 		MenschenListe.add(unparteiische.UnparteiischeString());
 		
-	/*	for (int i = 0; i < MenschenListe.size(); i++) {
-			System.out.println(MenschenListe.get(i));
-		}*/
+	}
+	
+		
+		public void BildListenLogik(){
+			
+			BilderListe.add(".\\IMG\\JohanDjourou.jpg");
+			BilderListe.add(".\\IMG\\GranitXhaka.jpg");
+			BilderListe.add(".\\IMG\\ManuelAkanji.jpg");
+			
+			BilderListe.add(".\\IMG\\VladimirPetkovic.jpg");
+			
+			BilderListe.add(".\\IMG\\Fahad Al-Mirdasi.jpg");
+			BilderListe.add(".\\IMG\\AlirezaFaghani.jpg");
+			BilderListe.add(".\\IMG\\RyujiSato.jpg");
+			BilderListe.add(".\\IMG\\NawafShukralla.jpeg");
+			
 	}
 	
 	public String getMenschenListe(int ID) {
 		return MenschenListe.get(ID);
 	}
 	
+	public String getBildListe(int ID) {
+		return BilderListe.get(ID);
+	}
 	
 	
 	public static void main(String[] args) {
-		HauptLogik hl = new HauptLogik();
-		hl.Listenlogik();
-
-
+		HauptLogik hb = new HauptLogik();
+		hb.BildListenLogik();	
 	}
-
-	
 }
