@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="GUI.Startbildschirm" project="Sammelalbum" 
     file="/Sammelalbum/src/GUI/Startbildschirm.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="697" y="-301"/>    
+    <position height="-1" width="-1" x="659" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="GUI.Start" project="Sammelalbum" file="/Sammelalbum/src/GUI/Start.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="513" y="-419"/>    
+    <position height="-1" width="-1" x="422" y="18"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="Daten.Unparteiische" project="Sammelalbum" 
     file="/Sammelalbum/src/Daten/Unparteiische.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1650" y="198"/>    
+    <position height="-1" width="-1" x="1648" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -89,60 +89,68 @@
   <association id="11">    
     <end type="SOURCE" refId="3" navigable="false">      
       <attribute id="12" name="unparteiische">        
-        <position height="0" width="0" x="734" y="-957"/>      
+        <position height="0" width="0" x="732" y="-961"/>      
       </attribute>      
       <multiplicity id="13" minimum="0" maximum="1">        
-        <position height="0" width="0" x="734" y="-957"/>      
+        <position height="0" width="0" x="732" y="-961"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="14">    
+  <dependency id="14">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <realization id="15">    
     <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="9"/>  
   </realization>  
-  <association id="15">    
+  <association id="16">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="16" name="trainer">        
+      <attribute id="17" name="trainer">        
         <position height="0" width="0" x="328" y="-1117"/>      
       </attribute>      
-      <multiplicity id="17" minimum="0" maximum="1">        
+      <multiplicity id="18" minimum="0" maximum="1">        
         <position height="0" width="0" x="328" y="-1117"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="18">    
+  <dependency id="19">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <association id="20">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="19" name="spieler">        
+      <attribute id="21" name="spieler">        
         <position height="0" width="0" x="514" y="-1275"/>      
       </attribute>      
-      <multiplicity id="20" minimum="0" maximum="1">        
+      <multiplicity id="22" minimum="0" maximum="1">        
         <position height="0" width="0" x="514" y="-1275"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="21">    
+  <association id="23">    
     <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="22" name="hauptlogik">        
+      <attribute id="24" name="hauptlogik">        
         <position height="0" width="0" x="434" y="-916"/>      
       </attribute>      
-      <multiplicity id="23" minimum="0" maximum="1">        
+      <multiplicity id="25" minimum="0" maximum="1">        
         <position height="0" width="0" x="434" y="-916"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="24">    
+  <generalization id="26">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
-  <generalization id="25">    
+  <generalization id="27">    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
