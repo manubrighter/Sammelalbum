@@ -495,7 +495,7 @@ this.add(pREFAlbum);
 		if(ae.getSource() ==this.bREFName1)
 		{
 			//Bild wird angezeigt
-			lblREFBild1.setText("Bild von Fahad Al-Mirdasi"); 
+			lblREFBild1.setIcon(new ImageIcon(".\\IMG\\Fahad Al-Mirdasi.jpg")); 
 			
 			//Statistik wird angezeigt
 			lblREFStatistik1.setVisible(false);
@@ -504,21 +504,21 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bREFName2)
 		{
-			lblREFBild2.setText("Bild von Alireza Faghani");
+			lblBild1.setIcon(new ImageIcon(".\\IMG\\AlirezaFaghani.jpg"));
 			lblREFStatistik2.setVisible(false);
 			lblREFStatistik6.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bREFName3)
 		{
-			lblREFBild3.setText("Bild von Ryuji Sato");
+			lblBild1.setIcon(new ImageIcon(".\\IMG\\RyujiSato.jpg"));
 			lblREFStatistik3.setVisible(false);
 			lblREFStatistik7.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bREFName4)
 		{
-			lblREFBild4.setText("Bild von Nawaf Shukralla");
+			lblBild1.setIcon(new ImageIcon(".\\IMG\\NawafShukralla.jpg"));
 			lblREFStatistik4.setVisible(false);
 			lblREFStatistik8.setVisible(true);
 		}
