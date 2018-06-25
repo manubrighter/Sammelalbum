@@ -3,166 +3,149 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="GUI.Startbildschirm" project="Sammelalbum" 
     file="/Sammelalbum/src/GUI/Startbildschirm.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="333" width="204" x="148" y="-468"/>    
+    <position height="-1" width="-1" x="697" y="-301"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="2" language="java" name="Logik" project="Sammelalbum" file="/Sammelalbum/src/Logik" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="392" y="-468"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="3" language="java" name="GUI" project="Sammelalbum" file="/Sammelalbum/src/GUI" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="533" y="-468"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <class id="4" language="java" name="GUI.Start" project="Sammelalbum" file="/Sammelalbum/src/GUI/Start.java" 
+  <class id="2" language="java" name="GUI.Start" project="Sammelalbum" file="/Sammelalbum/src/GUI/Start.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="674" y="-468"/>    
+    <position height="-1" width="-1" x="513" y="-419"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="Logik.BilderUndStatistikZuordnung" project="Sammelalbum" 
-    file="/Sammelalbum/src/Logik/BilderUndStatistikZuordnung.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="187" x="1061" y="-468"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="Logik.HauptLogik" project="Sammelalbum" 
+  <class id="3" language="java" name="Logik.HauptLogik" project="Sammelalbum" 
     file="/Sammelalbum/src/Logik/HauptLogik.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="189" x="827" y="859"/>    
+    <position height="-1" width="-1" x="1355" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="Daten.Spieler" project="Sammelalbum" file="/Sammelalbum/src/Daten/Spieler.java" 
+  <class id="4" language="java" name="Daten.Spieler" project="Sammelalbum" file="/Sammelalbum/src/Daten/Spieler.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="146" x="1046" y="1088"/>    
+    <position height="-1" width="-1" x="1633" y="-120"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="Daten.Unparteiische" project="Sammelalbum" 
+  <class id="5" language="java" name="Daten.Unparteiische" project="Sammelalbum" 
     file="/Sammelalbum/src/Daten/Unparteiische.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="179" x="827" y="1088"/>    
+    <position height="-1" width="-1" x="1650" y="198"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="GUI.Album" project="Sammelalbum" file="/Sammelalbum/src/GUI/Album.java" 
+  <class id="6" language="java" name="GUI.Album" project="Sammelalbum" file="/Sammelalbum/src/GUI/Album.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="1287" width="194" x="827" y="-468"/>    
+    <position height="-1" width="-1" x="907" y="175"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="10" language="java" name="Daten" project="Sammelalbum" file="/Sammelalbum/src/Daten" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="1288" y="-468"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <class id="11" language="java" name="GUI.PaekchenOeffnen" project="Sammelalbum" 
-    file="/Sammelalbum/src/GUI/PaekchenOeffnen.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="194" x="1429" y="-468"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="12" language="java" name="Daten.Trainer" project="Sammelalbum" file="/Sammelalbum/src/Daten/Trainer.java" 
+  <class id="7" language="java" name="Daten.Trainer" project="Sammelalbum" file="/Sammelalbum/src/Daten/Trainer.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="164" x="1232" y="1088"/>    
+    <position height="-1" width="-1" x="1642" y="38"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="Daten.Mensch" project="Sammelalbum" file="/Sammelalbum/src/Daten/Mensch.java" 
+  <class id="8" language="java" name="Daten.Mensch" project="Sammelalbum" file="/Sammelalbum/src/Daten/Mensch.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="179" x="1056" y="859"/>    
+    <position height="-1" width="-1" x="1924" y="38"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="14" language="java" name="Logik.HauptlogikInterface" project="Sammelalbum" 
+  <interface id="9" language="java" name="Logik.HauptlogikInterface" project="Sammelalbum" 
     file="/Sammelalbum/src/Logik/HauptlogikInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="164" x="623" y="1088"/>    
+    <position height="-1" width="-1" x="1353" y="-188"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
+  <generalization id="10">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </generalization>  
+  <association id="11">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="12" name="unparteiische">        
+        <position height="0" width="0" x="734" y="-957"/>      
+      </attribute>      
+      <multiplicity id="13" minimum="0" maximum="1">        
+        <position height="0" width="0" x="734" y="-957"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="14">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="9"/>  
+  </realization>  
   <association id="15">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="16" name="spieler"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="16" name="trainer">        
+        <position height="0" width="0" x="328" y="-1117"/>      
+      </attribute>      
+      <multiplicity id="17" minimum="0" maximum="1">        
+        <position height="0" width="0" x="328" y="-1117"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="18">    
-    <end type="SOURCE" refId="6"/>    
-    <end type="TARGET" refId="14"/>  
-  </realization>  
-  <generalization id="19">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="13"/>  
+  <association id="18">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="19" name="spieler">        
+        <position height="0" width="0" x="514" y="-1275"/>      
+      </attribute>      
+      <multiplicity id="20" minimum="0" maximum="1">        
+        <position height="0" width="0" x="514" y="-1275"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="21">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="22" name="hauptlogik">        
+        <position height="0" width="0" x="434" y="-916"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="1">        
+        <position height="0" width="0" x="434" y="-916"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
   </generalization>  
-  <association id="20">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="21" name="trainer"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="23">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="24" name="unparteiische"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="26">    
+  <generalization id="25">    
     <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="13"/>  
+    <end type="TARGET" refId="8"/>  
   </generalization>  
-  <generalization id="27">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="28">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="29" name="hauptlogik"/>      
-      <multiplicity id="30" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
