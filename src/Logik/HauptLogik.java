@@ -9,7 +9,7 @@ import Daten.Spieler;
 import Daten.Trainer;
 import Daten.Unparteiische;
 
-public class HauptLogik {
+public class HauptLogik implements HauptlogikInterface{
 	
 	ArrayList<String> MenschenListe = new ArrayList<>();
 	
