@@ -485,7 +485,7 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bName4)
 		{
-			lblBild1.setIcon(new ImageIcon(".\\IMG\\VladimirPetkovic.jpg"));
+			lblBild4.setIcon(new ImageIcon(".\\IMG\\VladimirPetkovic.jpg"));
 			lblStatistik4.setVisible(false);
 			lblStatistik8.setVisible(true);
 		}
@@ -504,21 +504,21 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bREFName2)
 		{
-			lblBild1.setIcon(new ImageIcon(".\\IMG\\AlirezaFaghani.jpg"));
+			lblREFBild2.setIcon(new ImageIcon(".\\IMG\\AlirezaFaghani.jpg"));
 			lblREFStatistik2.setVisible(false);
 			lblREFStatistik6.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bREFName3)
 		{
-			lblBild1.setIcon(new ImageIcon(".\\IMG\\RyujiSato.jpg"));
+			lblREFBild3.setIcon(new ImageIcon(".\\IMG\\RyujiSato.jpg"));
 			lblREFStatistik3.setVisible(false);
 			lblREFStatistik7.setVisible(true);
 		}
 		
 		else if(ae.getSource() ==this.bREFName4)
 		{
-			lblBild1.setIcon(new ImageIcon(".\\IMG\\NawafShukralla.jpg"));
+			lblREFBild4.setIcon(new ImageIcon(".\\IMG\\NawafShukralla.jpeg"));
 			lblREFStatistik4.setVisible(false);
 			lblREFStatistik8.setVisible(true);
 		}
