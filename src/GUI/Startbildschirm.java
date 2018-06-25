@@ -28,7 +28,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	
 	//Erstellung der GUI Elemente
 	private JButton bAlbumAnsehen;
-	private JButton bPaeckchenOeffnen; 
+	private JButton bPaeckchenOeffnen;  
 	private JButton bProgrammBeenden;
 	private JLabel lblFussballbilderSammelalbum;
 	private JLabel lblNeustarten;
