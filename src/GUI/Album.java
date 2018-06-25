@@ -471,7 +471,7 @@ this.add(pREFAlbum);
 		
 		else if(ae.getSource() ==this.bName2)
 		{
-			lblBild2.setText("Bild von Granit Xhaka");
+			lblBild2.setIcon(new ImageIcon(".\\IMG\\GranitXhaka.jpg"));
 			lblStatistik2.setVisible(false);
 			lblStatistik6.setVisible(true);
 		}
