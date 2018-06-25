@@ -88,7 +88,7 @@ public class Album extends JFrame implements ActionListener{
 		bName1 = new JButton("Johan Djourou");
 		bName2 = new JButton("Granit Xhaka");
 		bName3 = new JButton("Manuel Akanji");
-		bName4 = new JButton("Haris Seferovic");
+		bName4 = new JButton("Vladimir Petkovic");
 		
 	
 		pCHAlbum = new JPanel();
@@ -407,16 +407,27 @@ this.add(pREFAlbum);
 		
 		if(ae.getSource() ==this.bName1)
 		{
-			//pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
-			
-			
-			
 			//Bild wird angezeigt
 			lblBild1.setIcon(new ImageIcon(".\\IMG\\JohanDjourou.jpg"));
 			
 			//Statistik wird angezeigt
 			lblStatistik1.setVisible(false);
 			lblStatistik5.setVisible(true);
+		}
+		
+		if(ae.getSource() ==this.bName2)
+		{
+			lblBild2.setText("Bild von Granit Xhaka");
+		}
+		
+		if(ae.getSource() ==this.bName3)
+		{
+			lblBild3.setText("Bild von Manuel Akanj");
+		}
+		
+		if(ae.getSource() ==this.bName4)
+		{
+			lblBild4.setText("Bild von Vladimir Petkovic");
 		}
 	}
 		

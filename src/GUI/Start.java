@@ -1,4 +1,5 @@
 package GUI;
+//Code by Timon Hochstrasser<3
 
 public class Start {
 
