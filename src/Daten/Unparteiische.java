@@ -11,11 +11,11 @@ public class Unparteiische extends Mensch{
 
 	public String UnparteiischeString() {
 		StringBuilder sbTrainer = new StringBuilder();
-
+		/*
 		sbTrainer.append("ID: ");
 		sbTrainer.append(this.ID);
-
-		sbTrainer.append(", Alter: ");
+		 */
+		sbTrainer.append("Alter: ");
 		sbTrainer.append(this.Alter);
 		
 		sbTrainer.append(", Anzahl Pfiffe: ");

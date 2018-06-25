@@ -11,11 +11,11 @@ public class Trainer extends Mensch{
 
 	public String TrainerString() {
 		StringBuilder sbTrainer = new StringBuilder();
-
+		/*
 		sbTrainer.append("ID: ");
 		sbTrainer.append(this.ID);
-
-		sbTrainer.append(", Alter: ");
+		*/
+		sbTrainer.append("Alter: ");
 		sbTrainer.append(this.Alter);
 		
 		sbTrainer.append(", Funktion: ");
