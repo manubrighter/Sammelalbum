@@ -1,6 +1,4 @@
-/*ToDo
- Neustarten implementieren
- */
+
 
 
 
@@ -21,16 +19,17 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class Startbildschirm extends JFrame implements ActionListener {
 	
 	
 	//Erstellung der GUI Elemente
 	private JButton bAlbumAnsehen;
-	private JButton bPaeckchenOeffnen;
-	private JButton bNeustarten;
+	private JButton bPaeckchenOeffnen;  
 	private JButton bProgrammBeenden;
 	private JLabel lblFussballbilderSammelalbum;
+	private JLabel lblNeustarten;
 	private JPanel pStartbildschirm;
 	
 	//Erstellung Schriften
@@ -42,7 +41,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 	//Erstellung Farben
 	private Color myblue = new Color(66, 203, 244);
 	private Color myred = new Color(249, 79, 105);
-	private Color mygreen = new Color(161, 249, 78);
+	private Color mygreen = new Color(161, 249, 78); 
 	
 	public Startbildschirm()
 	{
@@ -69,11 +68,13 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		bPaeckchenOeffnen.setVisible(true);
 		bPaeckchenOeffnen.addActionListener(this);
 
-		bNeustarten = new JButton ("Neustarten");
-		bNeustarten.setFont(Font30);
-		bNeustarten.setBackground(mygreen);
-		bNeustarten.setVisible(true);
-		bNeustarten.addActionListener(this);
+		lblNeustarten = new JLabel ("© by Manuel Heller and Jimoh Meyer");
+		lblNeustarten.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNeustarten.setVerticalAlignment(SwingConstants.CENTER);
+		lblNeustarten.setFont(Font30);
+		lblNeustarten.setOpaque(true);;
+		lblNeustarten.setBackground(mygreen);
+		lblNeustarten.setVisible(true);
 		
 		bProgrammBeenden = new JButton ("Beenden");
 		bProgrammBeenden.setFont(Font30);
@@ -102,7 +103,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 		pStartbildschirm.add(bAlbumAnsehen, BorderLayout.WEST);
 		pStartbildschirm.add(bPaeckchenOeffnen, BorderLayout.EAST);
 		pStartbildschirm.add(bProgrammBeenden, BorderLayout.SOUTH);
-		pStartbildschirm.add(bNeustarten, BorderLayout.NORTH);
+		pStartbildschirm.add(lblNeustarten, BorderLayout.NORTH);
 		pStartbildschirm.add(lblFussballbilderSammelalbum, BorderLayout.CENTER);
 		pStartbildschirm.setBorder(BorderFactory.createEmptyBorder(50,50,50,50));
 		
@@ -125,7 +126,7 @@ public class Startbildschirm extends JFrame implements ActionListener {
 			bPaeckchenOeffnen.setText("Funktion nicht einsatzbereit");
 		}
 		
-		if (ae.getSource() == bNeustarten)
+		if (ae.getSource() == lblNeustarten)
 		{
 			//Reset Pictures
 			//Meldung "Neugestartet

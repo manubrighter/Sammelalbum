@@ -10,7 +10,7 @@ import Daten.Trainer;
 import Daten.Unparteiische;
 import GUI.Startbildschirm;
 
-public class HauptLogik {
+public class HauptLogik implements HauptlogikInterface{
 	
 	ArrayList<String> MenschenListe = new ArrayList<>();
 	ArrayList<String> BilderListe = new ArrayList<>();
