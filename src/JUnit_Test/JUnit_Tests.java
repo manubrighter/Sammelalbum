@@ -48,7 +48,7 @@ class JUnit_Tests {
 	}
 	
 	/**
-	 * testet ob der Konstruktor der für das erstellen eines Unparteiischen zuständig ist richtig funktioniert
+	 * testet ob der Konstruktor, der für das erstellen eines Unparteiischen zuständig ist, richtig funktioniert
 	 */
 	@Test
 	void testcreateUnparteiische() {
