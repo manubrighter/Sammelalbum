@@ -160,7 +160,6 @@ public class Album extends JFrame implements ActionListener{
 		bName4.setHorizontalAlignment(SwingConstants.CENTER);
 		bName4.setVerticalAlignment(SwingConstants.CENTER);
 		
-		//////////////////////////////////////////////////////////////////////////////////////////////////////
 		pSpielerBilder.setLayout(new GridLayout(1, 4, 10, 10));
 		pSpielerBilder.add(lblBild1);
 		pSpielerBilder.add(lblBild2);
@@ -168,7 +167,6 @@ public class Album extends JFrame implements ActionListener{
 		pSpielerBilder.add(lblBild4);	
 		pSpielerBilder.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 		pSpielerBilder.setBackground(myblue);
 		lblBild1.setHorizontalAlignment(SwingConstants.CENTER);
@@ -528,9 +526,6 @@ this.add(pREFAlbum);
 	}
 		
 	
-	public static void main(String[] args) {
-		Album al = new Album();
-		
-	}
+
 	
 }
