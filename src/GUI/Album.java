@@ -50,12 +50,8 @@ public class Album extends JFrame implements ActionListener{
 	////////////////////////////////////////////   UNPARTEIISCHE   /////////////////////////////////////////////////////////////////////
 	
 	private JButton bREFNaechsteSeite, bREFVorherigeSeite, bREFEinkleben, bREFName1, bREFName2, bREFName3, bREFName4;
-<<<<<<< HEAD
-	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblRefree;  
-=======
 	private JLabel lblREFBild1, lblREFBild2, lblREFBild3, lblREFBild4, lblREFStatistik1, lblREFStatistik2, lblREFStatistik3, lblREFStatistik4, lblREFStatistik5, lblREFStatistik6, lblREFStatistik7, lblREFStatistik8, lblRefree;  
->>>>>>> branch 'master' of https://github.com/manubrighter/Sammelalbum.git
-	private JPanel pREFAlbum, pREFTopCHAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats;
+	private JPanel pREFAlbum, pREFTopCHAlbum, pREFSpielerAngaben, pREFSpielerNamen, pREFSpielerBilder, pREFSpielerStats, pREFStatistik1, pREFStatistik2, pREFStatistik3, pREFStatistik4;
 	
 	
 
@@ -271,6 +267,10 @@ public class Album extends JFrame implements ActionListener{
 		pREFSpielerNamen = new JPanel();
 		pREFSpielerBilder = new JPanel();
 		pREFSpielerStats = new JPanel();
+		pREFStatistik1 = new JPanel();
+		pREFStatistik2 = new JPanel();
+		pREFStatistik3 = new JPanel();
+		pREFStatistik4 = new JPanel();
 		
 		pREFAlbum.setBounds(0, 0, 1150, 650);
 		
@@ -310,14 +310,7 @@ this.add(pREFAlbum);
 		pREFSpielerAngaben.add(pREFSpielerStats, BorderLayout.SOUTH);
 		
 		pREFSpielerNamen.setBackground(myred);
-<<<<<<< HEAD
 		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 10, 10));
-		pREFSpielerNamen.add(bREFName1);
-		pREFSpielerNamen.add(bREFName2);
-		pREFSpielerNamen.add(bREFName3);
-		pREFSpielerNamen.add(bREFName4);
-=======
-		pREFSpielerNamen.setLayout(new GridLayout(1, 4, 50, 50));
 		pREFSpielerNamen.add(bREFName1);
 		pREFSpielerNamen.add(bREFName2);
 		pREFSpielerNamen.add(bREFName3);
@@ -326,7 +319,6 @@ this.add(pREFAlbum);
 		bREFName2.setBackground(myblue);
 		bREFName3.setBackground(myblue);
 		bREFName4.setBackground(myblue);
->>>>>>> branch 'master' of https://github.com/manubrighter/Sammelalbum.git
 		bREFName1.setFont(Font20);
 		bREFName2.setFont(Font20);
 		bREFName3.setFont(Font20);
@@ -361,14 +353,36 @@ this.add(pREFAlbum);
 		
 		
 		pREFSpielerStats.setLayout(new GridLayout(1, 4, 10, 10));
-		pREFSpielerStats.add(lblREFStatistik1);
-		pREFSpielerStats.add(lblREFStatistik2);
-		pREFSpielerStats.add(lblREFStatistik3);
-		pREFSpielerStats.add(lblREFStatistik4);
+		pREFSpielerStats.add(pREFStatistik1);
+		pREFSpielerStats.add(pREFStatistik2);
+		pREFSpielerStats.add(pREFStatistik3);
+		pREFSpielerStats.add(pREFStatistik4);
+		
+		pREFStatistik1.add(lblREFStatistik1);
+		pREFStatistik1.add(lblREFStatistik5);
+		pREFStatistik1.setBackground(Color.GRAY);
+		
+		pREFStatistik2.add(lblREFStatistik2);
+		pREFStatistik2.add(lblREFStatistik6);
+		pREFStatistik2.setBackground(Color.GRAY);
+		
+		pREFStatistik3.add(lblREFStatistik3);
+		pREFStatistik3.add(lblREFStatistik7);
+		pREFStatistik3.setBackground(Color.GRAY);
+		
+		pREFStatistik4.add(lblREFStatistik4);
+		pREFStatistik4.add(lblREFStatistik8);
+		pREFStatistik4.setBackground(Color.GRAY);
+			
+		
 		lblREFStatistik1.setFont(Font20);
 		lblREFStatistik2.setFont(Font20);
 		lblREFStatistik3.setFont(Font20);
 		lblREFStatistik4.setFont(Font20);
+		lblREFStatistik5.setFont(Font15);
+		lblREFStatistik6.setFont(Font15);
+		lblREFStatistik7.setFont(Font15);
+		lblREFStatistik8.setFont(Font15);
 		pREFSpielerStats.setBorder(BorderFactory.createEmptyBorder(20/*top*/, 20/*left*/, 20/*bottom*/, 20/*right*/));
 		pREFSpielerStats.setBackground(Color.GRAY);
 		lblREFStatistik1.setHorizontalAlignment(SwingConstants.CENTER);
@@ -476,33 +490,8 @@ this.add(pREFAlbum);
 			lblStatistik8.setVisible(true);
 		}
 		
-<<<<<<< HEAD
-		//Einkleben Unparteiische
 		
-		if (ae.getSource()==this.bREFName1)
-		{
-			lblREFBild1.setText("Bild von Fahad Al Mirdasi");
-			lblREFStatistik1.setVisible(false);
-		}
-		
-		if (ae.getSource()==this.bREFName2)
-		{
-			lblREFBild2.setText("Bild von Alireza Faghani");
-		}
-		
-		if (ae.getSource()==this.bREFName3)
-		{
-			lblREFBild3.setText("Bild von Ryuji Sato");
-		}
-		
-		if (ae.getSource()==this.bREFName4)
-		{
-			lblREFBild4.setText("Bild von Nawaf Shukralla"); 
-		}
-	
-=======
-		
-		
+		//Einkleben Unparteiische		
 		if(ae.getSource() ==this.bREFName1)
 		{
 			//Bild wird angezeigt
@@ -533,7 +522,7 @@ this.add(pREFAlbum);
 			lblREFStatistik4.setVisible(false);
 			lblREFStatistik8.setVisible(true);
 		}
->>>>>>> branch 'master' of https://github.com/manubrighter/Sammelalbum.git
+
 	}
 		
 	
