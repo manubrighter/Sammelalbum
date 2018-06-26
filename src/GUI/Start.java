@@ -1,5 +1,10 @@
 package GUI;
 
+/**
+ * Start des Programmes
+ * @author Jimoh Meyer & Manuel Heller
+ *
+ */
 public class Start {
 
 	/**

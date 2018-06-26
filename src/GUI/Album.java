@@ -18,6 +18,11 @@ import javax.swing.SwingConstants;
 
 import Logik.HauptLogik;
 
+/**
+ * Album GUI 
+ * @author Jimoh Meyer & Manuel Heller
+ *
+ */
 public class Album extends JFrame implements ActionListener{
 	
 	

@@ -13,6 +13,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
+/**
+ * Startbildschirm GUI
+ * @author Jimoh Meyer & Manuel Heller
+ *
+ */
 public class Startbildschirm extends JFrame implements ActionListener {
 	
 	
