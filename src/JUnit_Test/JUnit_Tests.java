@@ -10,6 +10,11 @@ import Daten.Spieler;
 import Daten.Unparteiische;
 import Logik.HauptLogik;
 
+/**
+ * Testet das Programm
+ * @author Jimoh Meyer & Manuel Heller
+ *
+ */
 class JUnit_Tests {
 	
 	private static HauptLogik hl;

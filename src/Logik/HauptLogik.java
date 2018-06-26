@@ -19,13 +19,14 @@ import GUI.Startbildschirm;
 public class HauptLogik implements HauptlogikInterface{
 	
 	//Array Lists für die Menschen (mit Statistik) und die Bilder
-	ArrayList<String> MenschenListe = new ArrayList<>();
-	ArrayList<String> BilderListe = new ArrayList<>();
-	
+	private ArrayList<String> MenschenListe = new ArrayList<>();
+	private ArrayList<String> BilderListe = new ArrayList<>();
+
 	//Objekte (Zugriff auf Datenschicht)
-	Spieler spieler = new Spieler();
-	Trainer trainer = new Trainer();
-	Unparteiische unparteiische = new Unparteiische();
+	private Spieler spieler = new Spieler();
+	private Trainer trainer = new Trainer();
+	private Unparteiische unparteiische = new Unparteiische();
+
 	
 	/**
 	 * Im 

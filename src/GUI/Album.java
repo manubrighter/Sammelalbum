@@ -18,11 +18,16 @@ import javax.swing.SwingConstants;
 
 import Logik.HauptLogik;
 
+/**
+ * Album GUI 
+ * @author Jimoh Meyer & Manuel Heller
+ *
+ */
 public class Album extends JFrame implements ActionListener{
 	
 	
 	//Objekte erstellen
-	HauptLogik hauptlogik = new HauptLogik();
+	private HauptLogik hauptlogik = new HauptLogik();
 	
 	
 	//Variablen initialisieren///////////////////   Schweiz   /////////////////////////////////////////////////////////////////////////
