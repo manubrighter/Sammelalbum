@@ -10,17 +10,26 @@ import Daten.Trainer;
 import Daten.Unparteiische;
 import GUI.Startbildschirm;
 
+/**
+ * 
+ * @author Manuel Heller & Jimoh Meyer
+ * In dieser Klasse befindet sich die Logik des Programms. Ausserdem werden die Spieler hier abgespeichert
+ * 
+ */
 public class HauptLogik implements HauptlogikInterface{
 	
+	//Array Lists für die Menschen (mit Statistik) und die Bilder
 	ArrayList<String> MenschenListe = new ArrayList<>();
 	ArrayList<String> BilderListe = new ArrayList<>();
 	
-	
+	//Objekte (Zugriff auf Datenschicht)
 	Spieler spieler = new Spieler();
 	Trainer trainer = new Trainer();
 	Unparteiische unparteiische = new Unparteiische();
 	
-	
+	/**
+	 * Im 
+	 */
 	public void MenschListenLogik(){
 	
 		spieler.createSpieler(25, 15);
