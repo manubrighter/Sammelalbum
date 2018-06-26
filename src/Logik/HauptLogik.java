@@ -12,13 +12,13 @@ import GUI.Startbildschirm;
 
 public class HauptLogik implements HauptlogikInterface{
 	
-	ArrayList<String> MenschenListe = new ArrayList<>();
-	ArrayList<String> BilderListe = new ArrayList<>();
+	private ArrayList<String> MenschenListe = new ArrayList<>();
+	private ArrayList<String> BilderListe = new ArrayList<>();
 	
 	
-	Spieler spieler = new Spieler();
-	Trainer trainer = new Trainer();
-	Unparteiische unparteiische = new Unparteiische();
+	private Spieler spieler = new Spieler();
+	private Trainer trainer = new Trainer();
+	private Unparteiische unparteiische = new Unparteiische();
 	
 	
 	public void MenschListenLogik(){

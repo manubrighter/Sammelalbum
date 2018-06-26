@@ -22,7 +22,7 @@ public class Album extends JFrame implements ActionListener{
 	
 	
 	//Objekte erstellen
-	HauptLogik hauptlogik = new HauptLogik();
+	private HauptLogik hauptlogik = new HauptLogik();
 	
 	
 	//Variablen initialisieren///////////////////   Schweiz   /////////////////////////////////////////////////////////////////////////
