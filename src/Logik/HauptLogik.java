@@ -29,7 +29,7 @@ public class HauptLogik implements HauptlogikInterface{
 
 	
 	/**
-	 * Im 
+	 * Menschen mit den angegebenen Werten erstellen und der ArrayList hinzufügen
 	 */
 	public void MenschListenLogik(){
 	
@@ -54,7 +54,9 @@ public class HauptLogik implements HauptlogikInterface{
 		
 	}
 	
-		
+	/**
+	 * Relativer Dateipfad der Bilder in eine ArrayList speichern
+	 */
 	public void BildListenLogik(){
 		
 		//Spieler
